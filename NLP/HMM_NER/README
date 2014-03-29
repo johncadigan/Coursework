@@ -1,0 +1,18 @@
+Hidden Markov Model Name-Entity Recognition Tagger
+
+Files:
+
+HMM_tager.py: this program uses the Viterbi algorithm with hidden Markov models to label genes from a selection of the biocreative corpus; accuracy is improved by relpacing rare tokens with classes of tokens (Numeric tokens, all-capital tokens, tokens ending in a capital letter, and generic rare tokens)
+gene.counts: Has counts of tags for individual tokens as well as unigrams, bigrams and trigrams of tags
+gene.dev: The development corpus
+gene.key: The key for that corpus
+output: The output from running the program; it has an F1 score of .416
+eval_gene_tagger.py: Evaluates program's F1 score by comparing output to the key
+
+Instructions:
+
+To tag a text file:
+$python HMM_tagger.py training.counts text_file > output
+
+To evaluate with a given key:
+$python eval_gene_tagger.py key output
