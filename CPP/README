@@ -1,0 +1,25 @@
+These programs were originally made in Visual Studio for Windows, so some system messages will not work in Linux. However, they will all compile in Ubuntu with the gnu compiler for C++ (g++).
+
+Skills Demonstrated:
+    ~ Proficiency with C++
+    ~ Code made for reusability (classes and functions)
+    ~ Reasonable error prevention
+    ~ Well-documented code
+    ~ Object-oriented programming (inheritance, encapsulation)
+
+
+Projects:
+
+#1 CelestialBodies: A simple program that states a thing's weight on different planets.
+
+#2 NumberGuessingGame: A game in which players guess a number. By dividing and conquering, you can always win.
+
+#3 CardGame: A game in which players compete with the computer to get the higher card with a given number of redraws.
+
+#4 BoxGame: A game where the user tries to pick a winning box as in the Monty Hall problem. *Must compile with -std=c++0x option due to the use of to_string()
+
+#5 DiceMadness: A game in which the player and computer compete to get the greatest sum of a group of dice over a series of rounds. The code demonstrates operator overloading and encapsulation.
+
+#6 CaesarCipher: Encodes and decodes messages with the Caesar shift cipher. 1 encodes letters as 1 letter up ('a' becomes 'b') and decodes letters as one letter down ('b' becomes 'a').
+
+#7 NumberPictures:Prints a picture from a group of numbers. 1 1 1 2 2 4 4 5 5 7 7 7 0 draws a picture that looks like a house. This program demonstrates ineritance.
