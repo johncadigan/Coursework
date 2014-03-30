@@ -1,0 +1,9 @@
+CKY Parser:
+
+Files:
+CKY_Parser.py: This is a parser which implements the CKY algorithm which has at worst N^3 complexity.
+training.counts: This has counts of nonterminals and rules which will train the parser
+parse_dev.dat: This is a the development corpus which consists of questions
+parse_dev.key: This is the key for that corpus
+output: The output of the parser for the development corpus; it has an F1 score of .80, mainly because it is parsing questions.
+

@@ -1,5 +1,8 @@
 Hidden Markov Model Name-Entity Recognition Tagger
 
+### Warning: This program will experience underflow on 32-bit systems
+
+
 Files:
 
 HMM_tager.py: this program uses the Viterbi algorithm with hidden Markov models to label genes from a selection of the biocreative corpus; accuracy is improved by relpacing rare tokens with classes of tokens (Numeric tokens, all-capital tokens, tokens ending in a capital letter, and generic rare tokens)
