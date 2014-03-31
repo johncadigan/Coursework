@@ -7,3 +7,10 @@ parse_dev.dat: This is a the development corpus which consists of questions
 parse_dev.key: This is the key for that corpus
 output: The output of the parser for the development corpus; it has an F1 score of .80, mainly because it is parsing questions.
 
+Instructions:
+
+Parse dev data:
+$python CKY_Parser.py training.counts parse_dev.dat > output
+
+Analyze results:
+$python eval_parser.py parse_dev.key output

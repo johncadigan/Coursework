@@ -1,0 +1,23 @@
+Files:
+
+EM.py: This uses an expectation maximization algorithm to optomize the alignment of target and source parallel corpora through a series of iterations. EM1 only has uses the probability of word x being translated as y (word alignment) . EM2 adds the positional probability;eg. word #1 being translated to word #3 in a sentence of length 5.
+corpus.en: The English training corpus
+corpus.es: The Spanish training corpus
+dev.en: The English development corpus
+dev.es: The Spanish development corpus
+t_values: The t_values from 5 iterations of EM1
+em2.dev.out: The results of EM2 with 5 iterations; it has an F1 score of .449.
+
+
+Instructions:
+
+Run either EM1 or EM2; currently EM1 is commented out. It is better to use pypy if possible.
+$python EM.py corpus.es corpus.en dev.es dev.en
+
+"Please input the desired number of training iterations": 5
+
+
+Evaluate the results
+$python eval_alignment.py dev.key em2.dev.out
+
+

@@ -1,0 +1,22 @@
+Global Linear Model Named Entity Recognition
+
+
+Files:
+
+GLM_NER.py: This has the tagger (GLM_NER) as well as a feature object (Feature) for feature vector operations.
+trained_v: This is the optimized weight vector and can be loaded while running the program.
+gene.train: This is the training data
+gene.dev: This is the development data
+eval_gene_tagger.py: This will evaluate the tagger
+output: The output from training 5 times; it has an F1 score of .552
+
+Instructions:
+
+Run the tagger:
+
+$python GLM_NER.py gene.train 5 (# of iterations) gene.dev
+
+###It is highly recommended to use pypy
+
+Evaluate the results:
+$python eval_gene_tagger.py gene.key output
