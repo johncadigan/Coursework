@@ -1,0 +1,8 @@
+Count_QS.py contains quicksort with 3 different partition methods, choosing the first, the last and the median of the first, middle and last. It will output the respective computations for each given a file with one number (not repeated) on each line.
+It should be noted that the median routine does not include the comparisons used to calculate the median.
+
+
+Instructions:
+
+$python Count_QS.py Count_QS.dat
+

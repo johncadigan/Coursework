@@ -1,0 +1,10 @@
+Karger Min Cut
+
+
+This is an implementation of the Karger minimum cut algorithm. It takes an adjacency list as input and outputs the minimum number of edges to cut through a graph. It works by randomly choosing vertices to combine and then counting the edges once there are only two vertices left. It must run for a number of iterations. For the current data, it will usually output the correct result with 50 iterations.
+
+Instructions:
+
+$python KargerMinCut.py KargerMinCut.dat
+
+Please input the number of iterations: 50

@@ -1,0 +1,9 @@
+Dijkstra's Shortest Path Algorithm:
+
+Files:
+Dijkstra.py: Runs two implementations of the algorithm. One with an array, and the other with a priority queue (improved heap). The second implementation is 1.5-1.8 times faster.
+Dijkstra.dat: The data in the format
+edge source	edge destination, edge length	edge destination, edge length
+
+Instructions:
+$python Dijkstra.py Dijkstra.dat
