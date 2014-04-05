@@ -21,13 +21,13 @@ class Features():
 		return "TAG:{0}:{1}".format(word,ptag)
 		
 	
-	def prefix_feature(self, history, ptag):
+	def prefix_feature(self, history, ptag, length):
 		taga, tagb, word, pos = history
-		return "PREFIX:{0}:{1}".format(word[:3],ptag)
+		return "PREFIX:{0}:{1}".format(word[:length],ptag)
 	
-	def suffix_feature(self, history, ptag):
+	def suffix_feature(self, history, ptag, length):
 		taga, tagb, word, pos = history
-		return "SUFFIX:{0}:{1}".format(word[-3::],ptag)
+		return "SUFFIX:{0}:{1}".format(word[-length::],ptag)
 
 	
 	def wordshape_feature(self, history, ptag):
@@ -45,9 +45,7 @@ class Features():
 			if len(wordshape) <= 1:
 				wordshape += nxt_shape
 			elif len(wordshape) >= 2:
-				if  wordshape[-2] != wordshape[-1] != nxt_shape:
-					wordshape += nxt_shape
-				elif wordshape[-1] != nxt_shape: #or wordshape[-2] != wordshape[-1]:
+				if wordshape[-1] != nxt_shape: #Wordshape only develops when the next few characters differ
 					wordshape += nxt_shape
 		return "WORDSHAPE:{0}:{1}".format(wordshape, ptag)
 	
@@ -72,10 +70,14 @@ class Features():
 	### Compute features
 	def compute_feature_vector(self, history, ptag):
 		features = []
+		taga, tagb, word, pos = history
 		features.append(self.trigram_tag_feature(history,ptag))
 		features.append(self.word_tag_feature(history,ptag))
-		features.append(self.suffix_feature(history,ptag))
-		features.append(self.prefix_feature(history,ptag))
+		if len(word) > 6: #Short words tend not to have many prefixes or suffixes
+			features.append(self.suffix_feature(history,ptag, 2))
+			features.append(self.suffix_feature(history,ptag, 3))
+			features.append(self.prefix_feature(history,ptag, 2))
+			features.append(self.prefix_feature(history,ptag, 3))
 		features.append(self.wordshape_feature(history,ptag))
 		feature_vector = {}
 		for feature in features:
@@ -142,7 +144,7 @@ class GLM_NER():
 			self.features.v[key] = 0.0
 		
 		while iteration < iterations:
-			print "Iteration {0}\n".format(iteration+1)
+			print "Iteration {0}".format(iteration+1)
 			for x in range(0, len(sentences)):
 				#print x, ' ', sentences[x]
 				sentence = sentences[x]

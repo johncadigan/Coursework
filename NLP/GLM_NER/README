@@ -8,7 +8,7 @@ trained_v: This is the optimized weight vector and can be loaded while running t
 gene.train: This is the training data
 gene.dev: This is the development data
 eval_gene_tagger.py: This will evaluate the tagger
-output: The output from training 5 times; it has an F1 score of .552
+output: The output from training 10 times; it has an F1 score of .589
 
 Instructions:
 

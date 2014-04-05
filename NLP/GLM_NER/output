@@ -42,8 +42,8 @@ significant O
 potency O
 against O
 established O
-E7 I-GENE
-- I-GENE
+E7 O
+- O
 expressing O
 metastatic O
 tumors O
@@ -81,9 +81,9 @@ as O
 input O
 to O
 a O
-3 I-GENE
-- I-GENE
-D I-GENE
+3 O
+- O
+D O
 biomechanical O
 model O
 , O
@@ -179,7 +179,7 @@ eccentric O
 exercise O
 . O
  
-STAT5A I-GENE
+STAT5A O
 mutations O
 in O
 the O
@@ -197,9 +197,9 @@ not O
 alter O
 the O
 BTK I-GENE
-- I-GENE
+- O
 mediated O
-tyrosine I-GENE
+tyrosine O
 phosphorylation O
 . O
  
@@ -283,7 +283,7 @@ that O
 PKC I-GENE
 and O
 p44 I-GENE
-/ O
+/ I-GENE
 p42MAPK I-GENE
 signalings O
 are O
@@ -299,8 +299,8 @@ mediated O
 IGF I-GENE
 - I-GENE
 II I-GENE
-P4 I-GENE
-transcriptional I-GENE
+P4 O
+transcriptional O
 activity O
 since O
 ( O
@@ -322,7 +322,7 @@ P4 O
 activity O
 in O
 HBx I-GENE
-- I-GENE
+- O
 transfected O
 HepG2 O
 cells O
@@ -334,7 +334,7 @@ PKC I-GENE
 inhibition O
 by O
 PKC I-GENE
-inhibitor O
+inhibitor I-GENE
 Go6976 I-GENE
 reduces I-GENE
 Sp1 I-GENE
@@ -350,7 +350,7 @@ II I-GENE
 mRNA I-GENE
 in O
 HBx I-GENE
-- I-GENE
+- O
 transfected O
 HepG2 O
 cells O
@@ -379,7 +379,7 @@ II I-GENE
 mRNA I-GENE
 in O
 HBx I-GENE
-- I-GENE
+- O
 transfected O
 HepG2 O
 cells O
@@ -403,20 +403,20 @@ promoters O
  
 Similarly O
 , O
-curcumin I-GENE
+curcumin O
 ( O
 diferuloylmethane O
 ), O
 an O
-anti I-GENE
-- I-GENE
+anti O
+- O
 inflammatory O
 agent O
 , O
 suppressed O
 OSM I-GENE
 - I-GENE
-stimulated O
+stimulated I-GENE
 STAT1 I-GENE
 phosphorylation O
 , O
@@ -530,7 +530,7 @@ first O
 embryo O
 cleavage O
 ( O
-FEC I-GENE
+FEC O
 ) O
 25 O
 - O
@@ -541,7 +541,7 @@ intracytoplasmic O
 sperm O
 injection O
 ( O
-ICSI I-GENE
+ICSI O
 ) O
 as O
 a O
@@ -610,10 +610,10 @@ blood O
 group O
 alpha O
 ( O
-1 I-GENE
+1 O
 , O
-2 I-GENE
-) I-GENE
+2 O
+) O
 fucosyltransferase I-GENE
 genes I-GENE
 differentially O
@@ -657,7 +657,7 @@ either O
 the O
 GABPalpha I-GENE
 or O
-ATPsynCF6 I-GENE
+ATPsynCF6 O
 transcription O
 start O
 sites O
@@ -725,10 +725,10 @@ energy O
 transfer O
 component O
 ( O
-LET I-GENE
+LET O
 < O
-10 I-GENE
-keV I-GENE
+10 O
+keV O
 / O
 micrometer O
 ) O
@@ -795,7 +795,7 @@ short O
 - O
 acting O
 beta2 I-GENE
-- I-GENE
+- O
 agonist O
 alone O
 . O
@@ -1037,7 +1037,7 @@ Thus O
 , O
 BALB O
 / O
-c I-GENE
+c O
 mice O
 appear O
 to O
@@ -1075,9 +1075,9 @@ to O
 base O
 - O
 pair O
-C1 I-GENE
-- I-GENE
-G72 I-GENE
+C1 O
+- O
+G72 O
 and O
 discriminator O
 base O
@@ -1106,7 +1106,7 @@ the O
 Notch I-GENE
 - I-GENE
 CBF1 I-GENE
-/ O
+/ I-GENE
 RBP I-GENE
 - I-GENE
 Jkappa I-GENE
@@ -1154,9 +1154,9 @@ confirmed O
 by O
 competition O
 of O
-DNA I-GENE
-- I-GENE
-protein I-GENE
+DNA O
+- O
+protein O
 interactions O
 by O
 using O
@@ -1192,10 +1192,10 @@ the O
 YFV I-GENE
 Ag I-GENE
 - I-GENE
-binding O
-region O
+binding I-GENE
+region I-GENE
 ( O
-ABR O
+ABR I-GENE
 ) O
 occur O
 at O
@@ -1224,12 +1224,12 @@ molecules O
  
 The O
 Novacor O
-Left O
-Ventricular O
-Assist O
-System O
+Left I-GENE
+Ventricular I-GENE
+Assist I-GENE
+System I-GENE
 ( O
-LVAS O
+LVAS I-GENE
 ) O
 ( O
 Novacor O
@@ -1263,7 +1263,7 @@ DM O
 , O
 OM I-GENE
 , O
-CP O
+CP I-GENE
 , O
 total O
 dietary O
@@ -1388,8 +1388,8 @@ genes O
 of O
 the O
 Rad52 I-GENE
-recombinational I-GENE
-repair I-GENE
+recombinational O
+repair O
 pathway O
 are O
 required O
@@ -1398,7 +1398,7 @@ the O
 survival O
 of O
 rad27 I-GENE
-Delta O
+Delta I-GENE
 strains O
 at O
 both O
@@ -1436,8 +1436,8 @@ variant O
 of O
 Bak O
 is O
-anti I-GENE
-- I-GENE
+anti O
+- O
 apoptotic O
 in O
 neurons O
@@ -1530,7 +1530,7 @@ is O
 that O
 alpha O
 < O
-1 I-GENE
+1 O
 even O
 at O
 relatively O
@@ -1615,7 +1615,7 @@ or O
 dominant I-GENE
 negative I-GENE
 Ras I-GENE
-N17 I-GENE
+N17 O
 were O
 used O
 to O
@@ -1695,7 +1695,7 @@ Follow O
 up O
 Study O
 ( O
-NHEFS I-GENE
+NHEFS O
 ). O
  
 To O
@@ -1711,8 +1711,8 @@ O2 O
 max O
 ) O
 of O
-Hong O
-Kong O
+Hong I-GENE
+Kong I-GENE
 Chinese O
 children O
 and O
@@ -1742,15 +1742,15 @@ run O
 test O
 , O
 in O
-1 I-GENE
+1 O
 , O
 427 O
 schoolchildren O
 aged O
 between O
-8 I-GENE
-- I-GENE
-12 I-GENE
+8 O
+- O
+12 O
 years O
 . O
  
@@ -1781,7 +1781,7 @@ myeloid O
 restricted O
 zebrafish I-GENE
 CCAAT I-GENE
-/ O
+/ I-GENE
 enhancer I-GENE
 - I-GENE
 binding I-GENE
@@ -1851,8 +1851,8 @@ a O
 potential O
 for O
 cross O
-- I-GENE
-talk I-GENE
+- O
+talk O
 not O
 demonstrated O
 previously O
@@ -1901,8 +1901,8 @@ human I-GENE
 myeloperoxidase I-GENE
 ( O
 MPO I-GENE
-) I-GENE
-promoter I-GENE
+) O
+promoter O
 we O
 , O
 for O
@@ -1925,7 +1925,7 @@ HBP1 I-GENE
 HMG I-GENE
 - I-GENE
 Box I-GENE
-containing O
+containing I-GENE
 protein I-GENE
 1 I-GENE
 ), O
@@ -1965,24 +1965,24 @@ in O
 the O
 E2F I-GENE
 element I-GENE
-(( O
-m O
-) O
-CG O
+(( I-GENE
+m I-GENE
+) I-GENE
+CG I-GENE
 ( O
-m O
-) O
-CG O
+m I-GENE
+) I-GENE
+CG I-GENE
 ) O
 generated O
 a O
 new O
-methylcytosine I-GENE
-- I-GENE
-specific I-GENE
-DNA I-GENE
-- I-GENE
-protein I-GENE
+methylcytosine O
+- O
+specific O
+DNA O
+- O
+protein O
 complex O
 . O
  
@@ -2059,8 +2059,8 @@ showed O
 expression O
 of O
 the O
-Gus O
-gene O
+Gus I-GENE
+gene I-GENE
 specifically O
 in O
 the O
@@ -2072,10 +2072,10 @@ development O
 ( O
 first O
 detected O
-10 I-GENE
-- I-GENE
-12 I-GENE
-d I-GENE
+10 O
+- O
+12 O
+d O
 after O
 anthesis O
 ). O
@@ -2125,7 +2125,7 @@ factor I-GENE
 involves O
 distinct O
 MEK I-GENE
-/ O
+/ I-GENE
 ERK I-GENE
 activations O
 . O
@@ -2133,7 +2133,7 @@ activations O
 We O
 randomly O
 assigned O
-1 I-GENE
+1 O
 , O
 219 O
 subjects O
@@ -2156,8 +2156,8 @@ alfa I-GENE
 2b I-GENE
 dose O
 ( O
-3 I-GENE
-MIU I-GENE
+3 O
+MIU O
 ) O
 or O
 the O
@@ -2176,12 +2176,12 @@ alfa I-GENE
 . O
 5 O
 , O
-1 I-GENE
+1 O
 . O
 0 O
 , O
 or O
-1 I-GENE
+1 O
 . O
 5 O
 microg O
@@ -2199,7 +2199,7 @@ binding O
 of O
 Nhp2p I-GENE
 to O
-H I-GENE
+H O
 / O
 ACA I-GENE
 snoRNAs I-GENE
@@ -2239,11 +2239,11 @@ mm O
 Hg O
 ml O
 (- O
-1 I-GENE
+1 O
 ). O
 min O
 (- O
-1 I-GENE
+1 O
 ), O
 were O
 : O
@@ -2291,8 +2291,8 @@ percentiles O
 of O
 PCDD O
 / O
-F I-GENE
-releases I-GENE
+F O
+releases O
 for O
 1999 O
 ranged O
@@ -2301,7 +2301,7 @@ to O
 4 O
 . O
 1 I-GENE
-g O
+g I-GENE
 I I-GENE
 - I-GENE
 TEQ I-GENE
@@ -2356,14 +2356,14 @@ sequenced O
 one O
 of O
 the O
-hamster I-GENE
-liver I-GENE
-3 I-GENE
-- I-GENE
-hydroxy I-GENE
-- I-GENE
-hexobarbital I-GENE
-dehydrogenases I-GENE
+hamster O
+liver O
+3 O
+- O
+hydroxy O
+- O
+hexobarbital O
+dehydrogenases O
 which O
 catalyze O
 not O
@@ -2372,14 +2372,14 @@ cyclic O
 alcohols O
 but O
 also O
-17beta I-GENE
-- I-GENE
-hydroxy I-GENE
-- I-GENE
+17beta O
+- O
+hydroxy O
+- O
 steroids O
 and O
-3alpha I-GENE
-- I-GENE
+3alpha O
+- O
 hydroxysteroids O
 . O
  
@@ -2569,7 +2569,7 @@ MTC I-GENE
 cell O
 line O
 expressing O
-MEN O
+MEN I-GENE
 2A I-GENE
 type I-GENE
 RET I-GENE
@@ -2644,14 +2644,14 @@ derived O
 portion O
 . O
  
-Direct O
-superoxide O
+Direct I-GENE
+superoxide I-GENE
 scavenging O
 activity O
 of O
 nonsteroidal O
-anti I-GENE
-- I-GENE
+anti O
+- O
 inflammatory O
 drugs O
 : O
@@ -2687,7 +2687,7 @@ another O
 SNP I-GENE
 ( O
 GTG83 I-GENE
-/ O
+/ I-GENE
 ATG83 I-GENE
 ), O
 creates O
@@ -2695,9 +2695,9 @@ an O
 additional O
 alternative O
 in O
-- I-GENE
-frame I-GENE
-AUG I-GENE
+- O
+frame O
+AUG O
 in O
 B I-GENE
 - I-GENE
@@ -2730,8 +2730,8 @@ mutants O
 primarily O
 in O
 the O
-C I-GENE
-- I-GENE
+C O
+- O
 terminal O
 half O
 of O
@@ -2786,7 +2786,7 @@ US3 I-GENE
 affects O
 the O
 Cdc42 I-GENE
-/ O
+/ I-GENE
 Rac I-GENE
 pathway O
 and O
@@ -2877,7 +2877,7 @@ GO O
 . O
  
 Once O
-ICP I-GENE
+ICP O
 reaches O
 critical O
 values O
@@ -2909,13 +2909,13 @@ of O
 blr1 I-GENE
 increased O
 JNK I-GENE
-/ O
+/ I-GENE
 SAPK I-GENE
 activity O
 , O
 but O
 JNK I-GENE
-/ O
+/ I-GENE
 SAPK I-GENE
 activation O
 was O
@@ -2923,8 +2923,8 @@ not O
 needed O
 for O
 accelerated O
-RA I-GENE
-- I-GENE
+RA O
+- O
 induced O
 differentiation O
 and O
@@ -2993,7 +2993,7 @@ threefold O
 . O
  
 E2F1 I-GENE
-- I-GENE
+- O
 mediated O
 transcriptional O
 inhibition O
@@ -3001,7 +3001,7 @@ of O
 the O
 plasminogen I-GENE
 activator I-GENE
-inhibitor O
+inhibitor I-GENE
 type I-GENE
 1 I-GENE
 gene I-GENE
@@ -3018,13 +3018,13 @@ to O
 human O
 breast O
 carcinoma O
-MDA O
+MDA I-GENE
 - I-GENE
 MB231 I-GENE
 cells O
 overexpressing O
-human O
-MPG O
+human I-GENE
+MPG I-GENE
 in O
 order O
 to O
@@ -3052,8 +3052,8 @@ and O
 APE I-GENE
 / O
 ref O
-- I-GENE
-1 I-GENE
+- O
+1 O
 ) O
 or O
 direct O
@@ -3174,7 +3174,7 @@ Schistosoma O
 mansoni O
 homologue O
 ( O
-SmSmad2 I-GENE
+SmSmad2 O
 ) O
 was O
 overexpressed O
@@ -3185,8 +3185,8 @@ a O
 Sj26 I-GENE
 - I-GENE
 GST I-GENE
-fusion O
-protein O
+fusion I-GENE
+protein I-GENE
 and O
 used O
 to O
@@ -3247,7 +3247,7 @@ were O
 not O
 ( O
 non O
-- I-GENE
+- O
 ACS I-GENE
 ) O
 were O
@@ -3342,7 +3342,7 @@ well O
 approximated O
 by O
 the O
-GSER I-GENE
+GSER O
 only O
 within O
 a O
@@ -3378,8 +3378,8 @@ insulin I-GENE
 therapy O
 ( O
 CIIIT I-GENE
-) O
-delivers O
+) I-GENE
+delivers I-GENE
 insulin I-GENE
 in O
 a O
@@ -3431,7 +3431,7 @@ correspond O
 to O
 " O
 isochore O
-H1 I-GENE
+H1 O
 " O
 and O
 the O
@@ -3512,7 +3512,7 @@ and O
 240 O
 , O
 and O
-300 I-GENE
+300 O
 s O
 after O
 intravenous O
@@ -3531,7 +3531,7 @@ PD I-GENE
 US I-GENE
 . O
  
-Eight O
+Eight I-GENE
 CAD I-GENE
 patients O
 who O
@@ -3548,9 +3548,9 @@ age O
 years O
 ), O
 baseline O
-low I-GENE
-density I-GENE
-lipoprotein I-GENE
+low O
+density O
+lipoprotein O
 (+/- O
 5 O
 mg O
@@ -3646,7 +3646,7 @@ pre O
 - O
 and O
 postsynaptic O
-brain O
+brain I-GENE
 dopamine I-GENE
 receptors I-GENE
 , O
@@ -3694,9 +3694,9 @@ to O
 function O
 as O
 transcription O
-factor O
-binding O
-sites O
+factor I-GENE
+binding I-GENE
+sites I-GENE
 . O
  
 A O
@@ -3784,9 +3784,9 @@ EXAFS O
 measurements O
 around O
 the O
-Ge I-GENE
-- I-GENE
-K I-GENE
+Ge O
+- O
+K O
 edge O
 have O
 been O
@@ -3845,8 +3845,8 @@ replication O
 fork O
 movement O
 near O
-HML I-GENE
-pauses I-GENE
+HML O
+pauses O
 at O
 a O
 silent O
@@ -3871,8 +3871,8 @@ replication O
 initiator O
 . O
  
-Cardiac O
-markers O
+Cardiac I-GENE
+markers I-GENE
 troponin I-GENE
 T I-GENE
 , O
@@ -3942,8 +3942,8 @@ assay O
 In O
 conclusion O
 , O
-USPIO I-GENE
-- I-GENE
+USPIO O
+- O
 enhanced O
 MRI O
 data O
@@ -3965,7 +3965,7 @@ permeability O
 ( O
 determined O
 using O
-USPIO I-GENE
+USPIO O
 ) O
 correlated O
 significantly O
@@ -4012,7 +4012,7 @@ transfer I-GENE
 Gal I-GENE
 to O
 GlcNAc I-GENE
-- I-GENE
+- O
 terminating O
 acceptors O
 . O
@@ -4060,7 +4060,7 @@ role O
 of O
 the O
 insulin I-GENE
-/ O
+/ I-GENE
 IGF I-GENE
 - I-GENE
 I I-GENE
@@ -4101,8 +4101,8 @@ wortmannin O
 nM O
 ) O
 and O
-LY I-GENE
-294002 I-GENE
+LY O
+294002 O
 ( O
 10 O
 microM O
@@ -4117,7 +4117,7 @@ kinase I-GENE
 kinase I-GENE
 , O
 PD I-GENE
-98059 I-GENE
+98059 O
 ( O
 50 O
 microM O
@@ -4237,7 +4237,7 @@ oncogenes O
 , O
 including O
 Bcr I-GENE
-/ O
+/ I-GENE
 Abl I-GENE
 , O
 Ras I-GENE
@@ -4308,7 +4308,7 @@ infections O
 Unexpectedly O
 , O
 Arg1 I-GENE
-- I-GENE
+- O
 expressing O
 COS1 O
 cells O
@@ -4357,7 +4357,7 @@ to O
 the O
 amount O
 of O
-REM I-GENE
+REM O
 sleep O
 , O
 while O
@@ -4378,14 +4378,14 @@ Diabetologia O
 ( O
 2001 O
 ) O
-44 I-GENE
+44 O
 [ O
-Suppl I-GENE
-3 I-GENE
-]: I-GENE
-B37 I-GENE
-- I-GENE
-B44 I-GENE
+Suppl O
+3 O
+]: O
+B37 O
+- O
+B44 O
 ] O
  
 RESULTS O
@@ -4423,8 +4423,8 @@ to O
 % O
 in O
 the O
-St O
-Jude O
+St I-GENE
+Jude I-GENE
 Medical O
 valve O
 and O
@@ -4601,14 +4601,14 @@ between O
 an O
 apolipoprotein I-GENE
 ( O
-Apo I-GENE
-) I-GENE
-E2 I-GENE
+Apo O
+) O
+E2 O
 or O
 an O
 Apo I-GENE
 E4 I-GENE
-phenotype I-GENE
+phenotype O
 and O
 a O
 favorable O
@@ -4659,8 +4659,8 @@ are O
 frequently O
 found O
 in O
-eukaryotic I-GENE
-promoter I-GENE
+eukaryotic O
+promoter O
 regions O
 . O
  
@@ -4682,8 +4682,8 @@ deodara O
 oil O
 with O
 synergists O
-MGK I-GENE
-- I-GENE
+MGK O
+- O
 264 O
 , O
 piperonyl O
@@ -4804,8 +4804,8 @@ TNFalpha I-GENE
 ). O
  
 The O
-mutant I-GENE
-receptors I-GENE
+mutant O
+receptors O
 , O
 as O
 well O
@@ -4820,7 +4820,7 @@ as O
 fusion O
 proteins O
 with O
-thioredoxin I-GENE
+thioredoxin O
 in O
 Escherichia O
 coli O
@@ -4842,7 +4842,7 @@ HPLC I-GENE
 after O
 digestion O
 with O
-enterokinase O
+enterokinase I-GENE
 . O
  
 The O
@@ -4971,16 +4971,16 @@ inflammatory O
 infiltrate O
 induced O
 by O
-RSV I-GENE
+RSV O
 infection O
 . O
  
-Gabapentin I-GENE
+Gabapentin O
 for O
-opiod I-GENE
-- I-GENE
-related I-GENE
-myoclonus I-GENE
+opiod O
+- O
+related O
+myoclonus O
 in O
 cancer O
 patients O
@@ -4994,7 +4994,7 @@ shown O
 that O
 purified O
 RAG1 I-GENE
-/ O
+/ I-GENE
 2 I-GENE
 proteins I-GENE
 can O
@@ -5021,14 +5021,14 @@ DNA I-GENE
 repair I-GENE
 proteins I-GENE
 Nbs1 I-GENE
-/ O
+/ I-GENE
 Mre11 I-GENE
-/ O
+/ I-GENE
 Rad50 I-GENE
 . O
  
-APC I-GENE
-- I-GENE
+APC O
+- O
 resistance O
 was O
 determined O
@@ -5072,7 +5072,7 @@ to O
 development O
 . O
  
-High O
+High I-GENE
 plasma I-GENE
 AVP I-GENE
 levels O
@@ -5090,7 +5090,7 @@ secretion O
 , O
 thereby O
 causing O
-SIADH I-GENE
+SIADH O
 . O
  
 Mutation O
@@ -5131,10 +5131,10 @@ cell O
 protein O
 0 O
 of O
-herpes I-GENE
-simplex I-GENE
-virus I-GENE
-1 I-GENE
+herpes O
+simplex O
+virus O
+1 O
 . O
  
 The O
@@ -5199,7 +5199,7 @@ nucleus O
 coincident O
 with O
 STAT3 I-GENE
-- I-GENE
+- O
 dependent O
 gene O
 expression O
@@ -5391,7 +5391,7 @@ elevated O
 Pitx2 I-GENE
 rescues O
 the O
-GABAergic I-GENE
+GABAergic O
 differentiation O
 defect O
 and O
@@ -5404,8 +5404,8 @@ and O
 behavioral O
 phenotypes O
 of O
-unc I-GENE
-- I-GENE
+unc O
+- O
 30 O
 mutants O
 , O
@@ -5449,8 +5449,8 @@ receptor I-GENE
 In O
 addition O
 , O
-stonin I-GENE
-2 I-GENE
+stonin O
+2 O
 binds O
 to O
 the O
@@ -5504,7 +5504,7 @@ core O
 element O
 for O
 MOK2 I-GENE
-binding O
+binding I-GENE
 . O
  
 Measurements O
@@ -5577,8 +5577,8 @@ prognostic O
 factors O
 in O
 non O
-- I-GENE
-Hodgkin I-GENE
+- O
+Hodgkin O
 ' O
 s O
 lymphomas O
@@ -5626,7 +5626,7 @@ patients O
 Rapamycin O
 ( O
 FRAP I-GENE
-/ O
+/ I-GENE
 mTOR I-GENE
 inhibitor O
 ) O
@@ -5668,8 +5668,8 @@ reaction O
 B I-GENE
 + I-GENE
 B I-GENE
---> I-GENE
-B I-GENE
+--> O
+B O
 , O
 and O
 being O
@@ -5692,14 +5692,14 @@ inhibition O
 was O
 greater O
 for O
-MR I-GENE
+MR O
 / O
 GR I-GENE
 in O
 combination O
 than O
 for O
-MR I-GENE
+MR O
 or O
 GR I-GENE
 alone O
@@ -5711,8 +5711,8 @@ define O
 a O
 conserved O
 pathway O
-wherein I-GENE
-sequential I-GENE
+wherein O
+sequential O
 histone I-GENE
 modifications O
 establish O
@@ -5793,20 +5793,20 @@ the O
 expression O
 and O
 caspase I-GENE
-- I-GENE
+- O
 dependent O
 cleavage O
 of O
 hTAF I-GENE
 ( O
 II I-GENE
-) O
-80 O
-delta O
-. O
+) I-GENE
+80 I-GENE
+delta I-GENE
+. I-GENE
 hTAF I-GENE
 ( O
-II I-GENE
+II O
 ) O
 80 O
 delta O
@@ -5814,7 +5814,7 @@ delta O
 unlike O
 hTAF I-GENE
 ( O
-II I-GENE
+II O
 ) O
 80 O
 , O
@@ -5827,12 +5827,12 @@ complex I-GENE
 lacking O
 hTAF I-GENE
 ( O
-II I-GENE
+II O
 ) O
 31 O
 . O
  
-With O
+With I-GENE
 NEU I-GENE
 overexpression O
 , O
@@ -5891,9 +5891,9 @@ The O
 loop O
 domain O
 of O
-heat O
-shock O
-transcription O
+heat I-GENE
+shock I-GENE
+transcription I-GENE
 factor I-GENE
 1 I-GENE
 dictates O
@@ -5980,8 +5980,8 @@ understanding O
 of O
 how O
 ZBP I-GENE
-- I-GENE
-89 I-GENE
+- O
+89 O
 modulates O
 cell O
 proliferation O
@@ -6036,9 +6036,9 @@ well O
 mixtures O
 of O
 ( O
-LA I-GENE
-)( I-GENE
-12 I-GENE
+LA O
+)( O
+12 O
 ) O
 with O
 the O
@@ -6071,7 +6071,7 @@ therapeutic O
 doses O
 , O
 Tg I-GENE
-- I-GENE
+- O
 off O
 values O
 ranged O
@@ -6090,8 +6090,8 @@ orthotopic O
 liver O
 transplantation O
 in O
-cyclosporin I-GENE
-A I-GENE
+cyclosporin O
+A O
 and O
 FK O
 506 O
@@ -6111,7 +6111,7 @@ that O
 the O
 Pc I-GENE
 protein I-GENE
-M33 I-GENE
+M33 O
 does O
 not O
 interact O
@@ -6185,8 +6185,8 @@ of O
 were O
 in O
 regimen O
-C I-GENE
-met I-GENE
+C O
+met O
 the O
 treatment O
 success O
@@ -6290,7 +6290,7 @@ undertaken O
 to O
 determine O
 ( O
-1 I-GENE
+1 O
 ) O
 clinical O
 characteristics O
@@ -6305,8 +6305,8 @@ pain O
 ) O
 value O
 of O
-cardiac O
-markers O
+cardiac I-GENE
+markers I-GENE
 troponin I-GENE
 T I-GENE
 , O
@@ -6425,9 +6425,9 @@ included O
 ANOVA I-GENE
 , O
 the O
-Pearson O
-Product O
-Moment O
+Pearson I-GENE
+Product I-GENE
+Moment I-GENE
 Correlation O
 Coefficient O
 , O
@@ -6550,15 +6550,15 @@ PKBalpha I-GENE
 . O
  
 An O
-F222W I-GENE
+F222W O
 : O
 W21F I-GENE
 rGST I-GENE
 A1 I-GENE
 - I-GENE
 1 I-GENE
-double O
-mutant O
+double I-GENE
+mutant I-GENE
 provides O
 a O
 direct O
@@ -6571,8 +6571,8 @@ the O
 environment O
 of O
 the O
-C I-GENE
-- I-GENE
+C O
+- O
 terminal O
 residue O
 . O
@@ -6624,7 +6624,7 @@ labile O
 No O
 preferential O
 VH I-GENE
-/ O
+/ I-GENE
 VL I-GENE
 - I-GENE
 chains I-GENE
@@ -6640,7 +6640,7 @@ reactivities O
 , O
 even O
 for O
-mAbs I-GENE
+mAbs O
 with O
 nearly O
 identical O
@@ -6693,7 +6693,7 @@ Sos I-GENE
 with O
 the O
 switch O
-1 I-GENE
+1 O
 and O
 switch O
 2 O
@@ -6723,7 +6723,7 @@ the O
 interaction O
 with O
 switch O
-1 I-GENE
+1 O
 leads O
 to O
 disruption O
@@ -6793,9 +6793,9 @@ is O
 a O
 recently O
 identified O
-transmembrane O
-adaptor O
-protein O
+transmembrane I-GENE
+adaptor I-GENE
+protein I-GENE
 , O
 which O
 is O
@@ -6830,7 +6830,7 @@ Elf I-GENE
 and O
 PU I-GENE
 . O
-1 I-GENE
+1 O
 , O
 and O
 that O
@@ -6946,7 +6946,7 @@ Additionally O
 , O
 a O
 CaCO3 I-GENE
-- I-GENE
+- O
 CO2 O
 / O
 N2 O
@@ -7160,8 +7160,8 @@ polymerase O
 chain O
 reaction O
 ( O
-RT I-GENE
-- I-GENE
+RT O
+- O
 PCR O
 ) O
 assay O
@@ -7180,9 +7180,9 @@ the O
 roman O
 garden O
 snail O
-Helix I-GENE
-pomatia I-GENE
-L I-GENE
+Helix O
+pomatia O
+L O
 . O
 were O
 performed O
@@ -7276,7 +7276,7 @@ oligo O
 - O
 amenorrheic O
 vs O
-1 I-GENE
+1 O
 . O
 077 O
 +/- O
@@ -7284,7 +7284,7 @@ vs O
 . O
 029 O
 or O
-1 I-GENE
+1 O
 . O
 051 O
 +/- O
@@ -7369,8 +7369,8 @@ from O
 a O
 donor O
 with O
-classic I-GENE
-CJD I-GENE
+classic O
+CJD O
 and O
 the O
 1999 O
@@ -7421,9 +7421,9 @@ rich O
 but O
 contains O
 five O
-G I-GENE
+G O
 / O
-C I-GENE
+C O
 rich O
 stretches O
 , O
@@ -7451,8 +7451,8 @@ Dictyostelium O
 genes O
 . O
  
-PACAP I-GENE
-mRNA I-GENE
+PACAP O
+mRNA O
 was O
 widely O
 expressed O
@@ -7558,8 +7558,8 @@ to O
 14 O
 , O
 15 O
-- I-GENE
-EET I-GENE
+- O
+EET O
 , O
 AA O
 did O
@@ -7747,10 +7747,10 @@ fluoride O
 plus O
 calcium O
 / O
-vitamin I-GENE
-D I-GENE
+vitamin O
+D O
 for O
-76 I-GENE
+76 O
 days O
 . O
  
@@ -7763,7 +7763,7 @@ that O
 the O
 tandem O
 SH2 I-GENE
-domains I-GENE
+domains O
 of O
 SHP2 I-GENE
 bind O
@@ -7832,7 +7832,7 @@ RACK1 I-GENE
 efficiently O
 relieves O
 E1A I-GENE
-- I-GENE
+- O
 mediated O
 growth O
 inhibition O
@@ -7845,7 +7845,7 @@ tumor O
 cells O
 from O
 E1A I-GENE
-- I-GENE
+- O
 induced O
 apoptosis O
 . O
@@ -8001,8 +8001,8 @@ with O
 HBO2 I-GENE
 . O
  
-Growth I-GENE
-hormone I-GENE
+Growth O
+hormone O
 and O
 insulin I-GENE
 - I-GENE
@@ -8073,12 +8073,12 @@ A O
 mutation O
 in O
 the O
-C I-GENE
-domain I-GENE
+C O
+domain O
 of O
 Rb I-GENE
 , O
-L901Q I-GENE
+L901Q O
 , O
 has O
 been O
@@ -8088,13 +8088,13 @@ completely O
 abolishes O
 cdk4 I-GENE
 / O
-D1 I-GENE
+D1 O
 phosphorylation O
 of O
 the O
 isolated O
-C I-GENE
-domain I-GENE
+C O
+domain O
 . O
  
 Homo O
@@ -8168,16 +8168,16 @@ range O
 - I-GENE
 110 I-GENE
 mU I-GENE
-/ O
+/ I-GENE
 L I-GENE
 ) O
 varied O
 from O
 48 O
 . O
-78 O
+78 I-GENE
 mU I-GENE
-/ O
+/ I-GENE
 L I-GENE
 - I-GENE
 168 I-GENE
@@ -8190,7 +8190,7 @@ mean O
 . O
 23 I-GENE
 mU I-GENE
-/ O
+/ I-GENE
 L I-GENE
 ). O
  
@@ -8266,8 +8266,8 @@ a O
 higher O
 incidence O
 of O
-early I-GENE
-CT I-GENE
+early O
+CT O
 changes O
 of O
 edema O
@@ -8297,8 +8297,8 @@ Mormonism O
 1975 O
 ." O
  
-SH2D1A I-GENE
-protein I-GENE
+SH2D1A O
+protein O
 levels O
 are O
 up O
@@ -8354,7 +8354,7 @@ containing O
 the O
 SNAG I-GENE
 repressor I-GENE
-motif O
+motif I-GENE
 in O
 the O
 NH2 O
@@ -8409,7 +8409,7 @@ structure O
 and O
 involving O
 cyclin I-GENE
-D3 I-GENE
+D3 O
 cause O
 the O
 translocation O
@@ -8450,8 +8450,8 @@ that O
 Smad2 I-GENE
 and O
 MEF2A I-GENE
-co I-GENE
-- I-GENE
+co O
+- O
 localise O
 in O
 the O
@@ -8522,14 +8522,14 @@ activities O
 associated O
 with O
 NGF I-GENE
-- I-GENE
-activated I-GENE
+- O
+activated O
 , O
 but O
 not O
 EGF I-GENE
-- I-GENE
-activated I-GENE
+- O
+activated O
 , O
 signaling O
 , O
@@ -8545,9 +8545,9 @@ library O
 to O
 isolate O
 specific O
-DNA O
-binding O
-proteins O
+DNA I-GENE
+binding I-GENE
+proteins I-GENE
 from O
 PC12 O
 nuclear O
@@ -8650,8 +8650,8 @@ field O
 . O
  
 The O
-cut I-GENE
-- I-GENE
+cut O
+- O
 off O
 percentage O
 positivity O
@@ -8682,7 +8682,7 @@ using O
 the O
 indirect O
 ELISA O
-kit I-GENE
+kit O
 . O
  
 PROCEDURE O
@@ -8837,11 +8837,11 @@ sequence O
 revealed O
 26 O
 , O
-588 I-GENE
-protein I-GENE
-- I-GENE
+588 O
+protein O
+- O
 encoding O
-transcripts I-GENE
+transcripts O
 for O
 which O
 there O
@@ -8875,7 +8875,7 @@ inhibitor O
 was O
 a O
 single O
-TAR I-GENE
+TAR O
 decoy O
 , O
 driven O
@@ -8887,9 +8887,9 @@ nuclear I-GENE
 RNA I-GENE
 promoter I-GENE
 ( O
-U6 I-GENE
-- I-GENE
-P I-GENE
+U6 O
+- O
+P O
 ). O
  
 By O
@@ -8979,7 +8979,7 @@ a O
 SH2 I-GENE
 domain I-GENE
 - I-GENE
-containing O
+containing I-GENE
 protein I-GENE
 - I-GENE
 tyrosine I-GENE
@@ -9009,10 +9009,10 @@ control O
 of O
 an O
 alternative O
-tissue I-GENE
-- I-GENE
-specific I-GENE
-promoter I-GENE
+tissue O
+- O
+specific O
+promoter O
 , O
 P1 O
 . O
@@ -9080,22 +9080,22 @@ anti I-GENE
 - I-GENE
 FcgammaRI I-GENE
 mAb I-GENE
-H22 I-GENE
+H22 O
 with O
-eGFP I-GENE
+eGFP O
 genetically O
 fused O
 to O
 the O
-C I-GENE
-- I-GENE
+C O
+- O
 terminal O
 end O
 of O
 each O
 CH3 I-GENE
 domain I-GENE
-. O
+. I-GENE
 wH22xeGFP I-GENE
 binds O
 within O
@@ -9162,8 +9162,8 @@ adolescents O
 are O
 lower O
 in O
-El O
-Paso O
+El I-GENE
+Paso I-GENE
 than O
 in O
 other O
@@ -9384,7 +9384,7 @@ specifically O
 with O
 individual O
 Tcf I-GENE
-/ O
+/ I-GENE
 Lef I-GENE
 family I-GENE
 members O
@@ -9429,8 +9429,8 @@ motif I-GENE
 LxCxE I-GENE
 at O
 the O
-C I-GENE
-- I-GENE
+C O
+- O
 terminal O
 region O
 . O
@@ -9491,18 +9491,18 @@ promoter I-GENE
 that O
 include O
 the O
-glucose I-GENE
-- I-GENE
-response I-GENE
-elements I-GENE
-Far I-GENE
+glucose O
+- O
+response O
+elements O
+Far O
 ( O
-E2 I-GENE
+E2 O
 ) O
 and O
 Flat O
 ( O
-A2 I-GENE
+A2 O
 / O
 A3 O
 ). O
@@ -9521,11 +9521,11 @@ core I-GENE
 histone I-GENE
 H2A I-GENE
 or O
-H2B I-GENE
+H2B O
 , O
 the O
 non O
-- I-GENE
+- O
 histone I-GENE
 tail O
 forms O
@@ -9646,8 +9646,8 @@ QWB I-GENE
 SA I-GENE
 and O
 SF I-GENE
-- I-GENE
-36 I-GENE
+- O
+36 O
 evaluating O
 outcomes O
 for O
@@ -9754,7 +9754,7 @@ Site O
 directed O
 mutagenesis O
 of O
-CAR I-GENE
+CAR O
 revealed O
 that O
 CAR I-GENE
@@ -9788,7 +9788,7 @@ Ad5 O
 , O
 Ad9 I-GENE
 , O
-Ad12 O
+Ad12 I-GENE
 , O
 and O
 Ad41L I-GENE
@@ -9818,8 +9818,8 @@ the O
 activities O
 of O
 both O
-D I-GENE
-- I-GENE
+D O
+- O
 and O
 E I-GENE
 - I-GENE
@@ -9836,7 +9836,7 @@ by O
 the O
 regulation O
 of O
-p15 I-GENE
+p15 O
 ( O
 Ink4b I-GENE
 ) O
@@ -9855,7 +9855,7 @@ data O
 indicate O
 that O
 the O
-SmSmad2 I-GENE
+SmSmad2 O
 responds O
 to O
 the O
@@ -9913,7 +9913,7 @@ of O
 c I-GENE
 - I-GENE
 sis I-GENE
-/ O
+/ I-GENE
 PDGF I-GENE
 - I-GENE
 B I-GENE
@@ -9986,8 +9986,8 @@ the O
 presence O
 of O
 the O
-androgen O
-receptors O
+androgen I-GENE
+receptors I-GENE
 . O
  
 This O
@@ -10010,7 +10010,7 @@ vision O
 . O
  
 The O
-JHRLSS I-GENE
+JHRLSS O
 has O
 been O
 used O
@@ -10044,7 +10044,7 @@ RLS O
 Consistent O
 effects O
 on O
-pVHL I-GENE
+pVHL O
 function O
 were O
 observed O
@@ -10060,7 +10060,7 @@ Interestingly O
 , O
 the O
 CYP71D20 I-GENE
-- I-GENE
+- O
 encoded O
 enzyme O
 activity O
@@ -10075,9 +10075,9 @@ epi O
 - O
 aristolochene O
 and O
-1 I-GENE
-- I-GENE
-deoxycapsidiol I-GENE
+1 O
+- O
+deoxycapsidiol O
 to O
 capsidiol O
 in O
@@ -10089,7 +10089,7 @@ the O
 notion O
 that O
 this O
-P450 I-GENE
+P450 O
 enzyme O
 catalyzes O
 both O
@@ -10097,7 +10097,7 @@ hydroxylations O
 of O
 its O
 hydrocarbon I-GENE
-substrate O
+substrate I-GENE
 . O
  
 A O
@@ -10224,7 +10224,7 @@ tests O
  
 Moreover O
 , O
-PTax I-GENE
+PTax O
 expressed O
 higher O
 background O
@@ -10275,9 +10275,9 @@ was O
 predicted O
 to O
 be O
-E445 I-GENE
-- I-GENE
-T446 I-GENE
+E445 O
+- O
+T446 O
 based O
 on O
 the O
@@ -10369,10 +10369,10 @@ stellate O
 cells O
 . O
  
-Cholesteryl I-GENE
-ester I-GENE
-transfer I-GENE
-protein I-GENE
+Cholesteryl O
+ester O
+transfer O
+protein O
 and O
 atherosclerosis O
 in O
@@ -10408,7 +10408,7 @@ increases O
 binding O
 of O
 CREB I-GENE
-/ O
+/ I-GENE
 ATF I-GENE
 proteins I-GENE
 but O
@@ -10417,7 +10417,7 @@ basal O
 repression O
 of O
 LTR I-GENE
-- I-GENE
+- O
 directed O
 transcription O
 in O
@@ -10444,7 +10444,7 @@ a O
 mediator O
 of O
 hGH I-GENE
-- I-GENE
+- O
 stimulated O
 mitogenesis O
 but O
@@ -10567,8 +10567,8 @@ that O
 PMN O
 also O
 exert O
-anti I-GENE
-- I-GENE
+anti O
+- O
 inflammatory O
 effects O
 by O
@@ -10676,7 +10676,7 @@ synthesis O
 in O
 patients O
 with O
-COLD I-GENE
+COLD O
 or O
 left O
 heart O
@@ -10723,8 +10723,8 @@ fold O
 family O
 member O
 , O
-Protein I-GENE
-S I-GENE
+Protein O
+S O
 . O
  
 Twenty O
@@ -10795,7 +10795,7 @@ which O
 demonstrated O
 that O
 transrectal O
-HIFU I-GENE
+HIFU O
 reduces O
 bladder O
 outflow O
@@ -10808,8 +10808,8 @@ have O
 shown O
 that O
 CopG I-GENE
-co I-GENE
-- I-GENE
+co O
+- O
 operatively O
 associates O
 to O
@@ -10893,10 +10893,10 @@ MAPK I-GENE
 pathway O
 activation O
 by O
-E2 I-GENE
+E2 O
 , O
 and O
-transforming O
+transforming I-GENE
 growth I-GENE
 factor I-GENE
 alpha I-GENE
@@ -10921,11 +10921,11 @@ enhance O
 the O
 ability O
 of O
-17beta I-GENE
-- I-GENE
-estradiol I-GENE
+17beta O
+- O
+estradiol O
 ( O
-E2 I-GENE
+E2 O
 ) O
 or O
 parathyroid I-GENE
@@ -10959,8 +10959,8 @@ a O
 major O
 2 O
 . O
-1 I-GENE
-- I-GENE
+1 O
+- O
 kb O
 mRNA O
 throughout O
@@ -11051,7 +11051,7 @@ sample O
  
 The O
 BFA I-GENE
-System O
+System I-GENE
 reads O
 a O
 text O
@@ -11088,7 +11088,7 @@ to O
 understand O
 how O
 ErbB1 I-GENE
-/ O
+/ I-GENE
 ErbB2 I-GENE
 signaling O
 contributes O
@@ -11101,7 +11101,7 @@ used O
 the O
 ErbB I-GENE
 kinase I-GENE
-inhibitor O
+inhibitor I-GENE
 AG1478in I-GENE
 ErbB2 I-GENE
 - I-GENE
@@ -11166,7 +11166,7 @@ gene I-GENE
 identification O
 of O
 a O
-complex O
+complex I-GENE
 hormone I-GENE
 - I-GENE
 response I-GENE
@@ -11207,7 +11207,7 @@ histocompatibility I-GENE
 complex I-GENE
 ( O
 MHC I-GENE
-)- I-GENE
+)- O
 restricted O
 peptide I-GENE
 - I-GENE
@@ -11344,9 +11344,9 @@ or O
 nine O
 - O
 residue O
-D I-GENE
-- I-GENE
-peptides I-GENE
+D O
+- O
+peptides O
 derived O
 from O
 the O
@@ -11371,8 +11371,8 @@ loxP I-GENE
 sequences I-GENE
 efficiently O
 underwent O
-Cre I-GENE
-- I-GENE
+Cre O
+- O
 mediated O
 recombination O
 . O
@@ -11381,9 +11381,9 @@ Multistage O
 models O
 and O
 the O
-A I-GENE
-- I-GENE
-bomb I-GENE
+A O
+- O
+bomb O
 survivor O
 data O
 : O
@@ -11469,8 +11469,8 @@ hyperparathyroidism O
 was O
 found O
 in O
-7 I-GENE
-BC I-GENE
+7 O
+BC O
 patients O
 ( O
 7 O
@@ -11502,12 +11502,12 @@ has O
 been O
 performed O
 in O
-1 I-GENE
-- I-GENE
-butyl I-GENE
-- I-GENE
-3 I-GENE
-- I-GENE
+1 O
+- O
+butyl O
+- O
+3 O
+- O
 methylimidazolium O
 tetrafluoroborate O
 ( O
@@ -11543,8 +11543,8 @@ promoter O
 region O
 and O
 upstream O
-promoter I-GENE
-sequences I-GENE
+promoter O
+sequences O
 . O
  
 ORF1 O
@@ -11694,7 +11694,7 @@ phase O
 liquid O
 chromatographic O
 ( O
-RPLC I-GENE
+RPLC O
 ) O
 method O
 development O
@@ -11806,18 +11806,18 @@ PTH I-GENE
 was O
 5 O
 '- O
-GGGGGAGGGGAG I-GENE
-- I-GENE
-3 I-GENE
+GGGGGAGGGGAG O
+- O
+3 O
 ' O
 (+ O
-1 I-GENE
+1 O
 to O
 + O
 12 O
 ) O
 of O
-PTHSR I-GENE
+PTHSR O
 . O
  
 Thus O
@@ -11900,8 +11900,8 @@ Tc O
 pentetate O
 and O
 orthoiodohippurate O
-I I-GENE
-131 I-GENE
+I O
+131 O
 ( O
 131I I-GENE
 - I-GENE
@@ -11914,7 +11914,7 @@ dogs O
 and O
 cats O
 with O
-1 I-GENE
+1 O
 and O
 2 O
 blood O
@@ -12179,9 +12179,9 @@ lines O
 These O
 TxRE I-GENE
 contain O
-cyclic I-GENE
-AMP I-GENE
-- I-GENE
+cyclic O
+AMP O
+- O
 responsive O
 elements O
 ( O
@@ -12237,7 +12237,7 @@ company O
 A O
 and O
 with O
-Salmonella O
+Salmonella I-GENE
 senftenberg O
 in O
 company O
@@ -12259,7 +12259,7 @@ the O
 flanking O
 region O
 of O
-maize O
+maize I-GENE
 C4 I-GENE
 phosphoenolpyruvate I-GENE
 carboxylase I-GENE
@@ -12282,8 +12282,8 @@ arrhythmias O
 was O
 lower O
 in O
-1 I-GENE
-- I-GENE
+1 O
+- O
 week O
 diabetics O
 : O
@@ -12399,7 +12399,7 @@ catheter O
 included O
 : O
 ( O
-1 I-GENE
+1 O
 ) O
 measurement O
 of O
@@ -12461,16 +12461,16 @@ of O
 the O
 administration O
 of O
-4 I-GENE
-- I-GENE
-chloro I-GENE
-- I-GENE
-2 I-GENE
-- I-GENE
+4 O
+- O
+chloro O
+- O
+2 O
+- O
 methylphenoxyacetic O
 acid O
 ( O
-MCPA I-GENE
+MCPA O
 ) O
 to O
 rats O
@@ -12546,7 +12546,7 @@ thereby O
 dampen O
 a O
 pathological O
-ICP I-GENE
+ICP O
 waveform O
 . O
  
@@ -12561,27 +12561,27 @@ recognition O
 of O
 the O
 bxd O
-PRE O
+PRE I-GENE
 by O
 d O
 ( O
-GA I-GENE
-)( I-GENE
-n I-GENE
+GA O
+)( O
+n O
 ) O
 repeat O
 binding O
 activities O
 mediates O
 PcG I-GENE
-- I-GENE
+- O
 dependent O
 silencing O
 . O
  
 The O
-gonadotrope I-GENE
-- I-GENE
+gonadotrope O
+- O
 specific O
 and O
 regulated O
@@ -12629,7 +12629,7 @@ element O
 , O
 and O
 the O
-steroidogenic O
+steroidogenic I-GENE
 factor I-GENE
 - I-GENE
 1 I-GENE
@@ -12637,12 +12637,12 @@ factor I-GENE
 SF I-GENE
 - I-GENE
 1 I-GENE
-) O
-binding O
-site O
+) I-GENE
+binding I-GENE
+site I-GENE
 . O
  
-Before O
+Before I-GENE
 PO3 I-GENE
 administration O
 , O
@@ -12659,7 +12659,7 @@ the O
 patients O
 received O
 only O
-1 I-GENE
+1 O
 or O
 2 O
 antituberculous O
@@ -12697,7 +12697,7 @@ developed O
 Conclusion O
 : O
 The O
-Lp I-GENE
+Lp O
 ( O
 a O
 ) O
@@ -12726,7 +12726,7 @@ lung O
 as O
 early O
 as O
-E12 I-GENE
+E12 O
 . O
 5 O
 of O
@@ -12756,7 +12756,7 @@ respiratory O
 tract O
 infections O
 or O
-PCP I-GENE
+PCP O
 had O
 increased O
 rates O
@@ -12870,8 +12870,8 @@ knowledge O
 of O
 the O
 hepatitis O
-C I-GENE
-virus I-GENE
+C O
+virus O
 , O
 and O
 healthcare O
@@ -12885,8 +12885,8 @@ Chlamydia O
 pneumoniae O
 , O
 and O
-Helicobacter I-GENE
-pylori I-GENE
+Helicobacter O
+pylori O
 IgG I-GENE
 antibodies I-GENE
 and O
@@ -13013,8 +13013,8 @@ as O
 well O
 as O
 an O
-E I-GENE
-- I-GENE
+E O
+- O
 responsive O
 element O
 . O
@@ -13073,7 +13073,7 @@ in O
 WOSCOPS O
 ( O
 average O
-1 I-GENE
+1 O
 . O
 5 O
 % O
@@ -13219,8 +13219,8 @@ cyclin I-GENE
 B I-GENE
 ( O
 Clb I-GENE
-)- I-GENE
-associated I-GENE
+)- O
+associated O
 form O
 . O
  
@@ -13236,7 +13236,7 @@ crosslinking O
 and O
 RNA I-GENE
 - I-GENE
-binding O
+binding I-GENE
 competition O
 experiments O
 indicates O
@@ -13274,10 +13274,10 @@ human O
 neuroblastoma O
 cells O
 SK O
-- I-GENE
-N I-GENE
-- I-GENE
-SH I-GENE
+- O
+N O
+- O
+SH O
 to O
 undergo O
 apoptosis O
@@ -13325,7 +13325,7 @@ nulliparous O
 groups O
 . O
  
-CONCLUSIONS I-GENE
+CONCLUSIONS O
 AND I-GENE
 CLINICAL I-GENE
 RELEVANCE I-GENE
@@ -13342,8 +13342,8 @@ MCB I-GENE
 - I-GENE
 IV I-GENE
 and O
-- I-GENE
-V I-GENE
+- O
+V O
 of O
 Greyhounds O
 , O
@@ -13395,7 +13395,7 @@ eIF4E I-GENE
 gene I-GENE
 , O
 2 I-GENE
-. O
+. I-GENE
 1 I-GENE
 kB I-GENE
 of O
@@ -13403,7 +13403,7 @@ the O
 rat I-GENE
 eIF4E I-GENE
 promoter I-GENE
-region O
+region I-GENE
 was O
 cloned O
 and O
@@ -13426,12 +13426,12 @@ cardiocytes O
 and O
 in O
 a O
-murine I-GENE
-C I-GENE
+murine O
+C O
 ( O
-2 I-GENE
-) I-GENE
-C I-GENE
+2 O
+) O
+C O
 ( O
 12 O
 ) O
@@ -13463,7 +13463,7 @@ individuals O
 ( O
 58 O
 . O
-1 I-GENE
+1 O
 %) O
 than O
 in O
@@ -13531,8 +13531,8 @@ s O
 unidentified O
 . O
  
-SELECTION I-GENE
-CRITERIA I-GENE
+SELECTION O
+CRITERIA O
 : O
 Randomised O
 controlled O
@@ -13559,7 +13559,7 @@ long O
 term O
 complications O
 of O
-levodopa O
+levodopa I-GENE
 therapy O
 . O
  
@@ -13578,11 +13578,11 @@ vs O
 . O
  
 Copyright O
-2000 O
-John O
-Wiley O
-& O
-Sons O
+2000 I-GENE
+John I-GENE
+Wiley I-GENE
+& I-GENE
+Sons I-GENE
 , O
 Ltd O
 . O
@@ -13673,7 +13673,7 @@ mediated O
 by O
 other O
 GATA I-GENE
-factors I-GENE
+factors O
 . O
  
 Eliminating O
@@ -13684,7 +13684,7 @@ ASCUS O
 reduces O
 the O
 ASCUS I-GENE
-/ O
+/ I-GENE
 SIL I-GENE
 ratio O
 but O
@@ -13846,7 +13846,7 @@ of O
 the O
 two O
 major O
-C I-GENE
+C O
 / O
 EBPepsilon I-GENE
 isoforms I-GENE
@@ -13903,8 +13903,8 @@ the O
 CBF1 I-GENE
 - I-GENE
 associated I-GENE
-corepressor O
-complex O
+corepressor I-GENE
+complex I-GENE
 . O
  
 Isolated O
@@ -13919,7 +13919,7 @@ Transfection O
 of O
 EGFP I-GENE
 - I-GENE
-tagged O
+tagged I-GENE
 DENTT I-GENE
 NLS I-GENE
 deletion O
@@ -13927,9 +13927,9 @@ constructs O
 lacking O
 the O
 bipartite O
-NLS I-GENE
-- I-GENE
-1 I-GENE
+NLS O
+- O
+1 O
 were O
 excluded O
 from O
@@ -14035,8 +14035,8 @@ the O
 relationship O
 between O
 the O
-DOX O
-binding O
+DOX I-GENE
+binding I-GENE
 ability O
 (% O
 DB O
@@ -14077,9 +14077,9 @@ flanking O
 region O
 of O
 the O
-pea O
-33RNP O
-gene O
+pea I-GENE
+33RNP I-GENE
+gene I-GENE
 . O
  
 We O
@@ -14088,7 +14088,7 @@ previously O
 shown O
 that O
 the O
-adenoviral I-GENE
+adenoviral O
 12S I-GENE
 E1A I-GENE
 protein I-GENE
@@ -14203,8 +14203,8 @@ SPE I-GENE
 I I-GENE
 and O
 SPE I-GENE
-- I-GENE
-J I-GENE
+- O
+J O
 ) O
 from O
 Streptococcus O
@@ -14231,7 +14231,7 @@ blood O
 pressure O
 elevation O
 : O
-1 I-GENE
+1 O
 ) O
 weight O
 reduction O
@@ -14298,7 +14298,7 @@ consumption O
 to O
 less O
 than O
-1 I-GENE
+1 O
 ounce O
 a O
 day O
@@ -14346,7 +14346,7 @@ single O
 copy O
 equid O
 LH I-GENE
-/ O
+/ I-GENE
 CGbeta I-GENE
 gene I-GENE
 and O
@@ -14463,8 +14463,8 @@ of O
 Hypericum O
 perforatum O
 , O
-St O
-John O
+St I-GENE
+John I-GENE
 ' O
 s O
 wort O
@@ -14549,7 +14549,7 @@ properties O
 of O
 this O
 p95 I-GENE
-component O
+component I-GENE
 . O
  
 Eliminating O
@@ -14560,7 +14560,7 @@ ASCUS O
 reduces O
 the O
 ASCUS I-GENE
-/ O
+/ I-GENE
 SIL I-GENE
 ratio O
 but O
@@ -14588,9 +14588,9 @@ Mena O
 , O
 another O
 microfilament O
-- I-GENE
-associated I-GENE
-protein I-GENE
+- O
+associated O
+protein O
 . O
  
 Experience O
@@ -14681,10 +14681,10 @@ were O
 . O
 4 O
 +/- O
-1 I-GENE
+1 O
 . O
-4 I-GENE
-kPa I-GENE
+4 O
+kPa O
 ( O
 mean O
 +/- O
@@ -14810,13 +14810,13 @@ Sp1 I-GENE
 , O
 and O
 Sp3 I-GENE
-binding O
+binding I-GENE
 reveal O
 a O
 housekeeping O
-- I-GENE
-type I-GENE
-promoter I-GENE
+- O
+type O
+promoter O
 for O
 the O
 AU I-GENE
@@ -14829,7 +14829,7 @@ gene I-GENE
 . O
  
 Phase O
-II I-GENE
+II O
 trial O
 of O
 the O
@@ -14837,8 +14837,8 @@ anti I-GENE
 - I-GENE
 G I-GENE
 ( O
-D2 I-GENE
-) I-GENE
+D2 O
+) O
 monoclonal I-GENE
 antibody I-GENE
 3F8 I-GENE
@@ -14874,9 +14874,9 @@ to O
 6 O
 h O
 ( O
-AUC0 I-GENE
-- I-GENE
-6 I-GENE
+AUC0 O
+- O
+6 O
 h O
 ) O
 and O
@@ -14907,7 +14907,7 @@ application O
 of O
 the O
 PSA I-GENE
-tape I-GENE
+tape O
 onto O
 the O
 damaged O
@@ -14952,10 +14952,10 @@ synergism O
 . O
  
 In O
-Cd O
-- O
-spiked O
-OECD O
+Cd I-GENE
+- I-GENE
+spiked I-GENE
+OECD I-GENE
 soil O
 , O
 internal O
@@ -15051,9 +15051,9 @@ reported O
 . O
  
 Both O
-Z I-GENE
+Z O
 and O
-R I-GENE
+R O
 expression O
 resulted O
 in O
@@ -15149,7 +15149,7 @@ g O
  
 Workload O
 , O
-UAPs I-GENE
+UAPs O
 , O
 and O
 you O
@@ -15201,7 +15201,7 @@ coronary O
 artery O
 bypass O
 ( O
-PADCAB I-GENE
+PADCAB O
 ). O
  
 Copyright O
