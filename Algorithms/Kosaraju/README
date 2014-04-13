@@ -1,0 +1,18 @@
+Kosaraju's Strongly Connected Components Algorithm:
+
+Files: Rec_SCC_Kosaraju.py runs a recursive implementation of the algorithm. Due to the way Python runs, you need to increase the stack size for it to run. You can do this with:
+$ulimit -s 32000
+SCC.txt: The information for a directed graph
+SCC_Kosaraju.py: An implementation with an iterative DFS search instead of a recursive one which removes the necessity of increasing the stack size and recursion limit. This is close to working, but will not work with the current file.
+
+
+
+
+Instructions:
+
+Increase stack size:
+$ulimit -s 32000
+
+Run the program (pypy would be better):
+$ python Rec_SCC_Kosaraju.py SCC.txt
+
