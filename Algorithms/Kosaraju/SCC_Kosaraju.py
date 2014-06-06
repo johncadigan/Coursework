@@ -103,11 +103,28 @@ class Kosaraju():
 			#Existing edges
 			if x == y:
 				print "Error! No edge can point to itself!"
-			self.G["v{0}".format(x)].append("v{0}".format(y)) #Forward edges
-			self.G["{0}v".format(y)].append("{0}v".format(x)) #Reverse edges
+			else:
+				self.G["v{0}".format(x)].append("v{0}".format(y)) #Forward edges
+				self.G["{0}v".format(y)].append("{0}v".format(x)) #Reverse edges
 			self.vertices.add(x)
 			
-	def Iterative_DFS(self, start, visited=[]):
+	def Iterative_DFS1(self, start, visited=[]):
+		finished = []
+		stack = [start]
+		while stack:
+			vertex = stack[-1]
+			if vertex not in visited:
+				visited.append(vertex)
+				to_visit = list(set(self.G[vertex])-set(visited))
+				if len(to_visit) > 0:
+					stack.extend(to_visit)
+			else:
+				if finished.count(vertex) == 0:
+					finished.insert(0, vertex)
+			stack.pop()
+		return finished
+	
+	def Iterative_DFS2(self, start, visited = []):
 		stack = [start]
 		while stack:
 			vertex = stack.pop()
@@ -116,10 +133,7 @@ class Kosaraju():
 				to_visit = list(set(self.G[vertex])-set(visited))
 				if len(to_visit) > 0:
 					stack.append(to_visit[0])
-				else:
-					self.S.append(vertex)
 		return visited
-	
 	
 	def main(self):
 		self.vertices = list(self.vertices)
@@ -127,10 +141,25 @@ class Kosaraju():
 		for x in self.vertices:
 			x = "v{0}".format(x)
 			if self.S.count(x) == 0:
-				self.Iterative_DFS(x,self.S) 
+				print x, self.Iterative_DFS1(x,self.S) 
+		print 'starting second'
+		traversed = []
+		prev_length = 0
+		SCCs = {}
+		print self.S, rev
+		while rev:
+			x = rev.pop(0)
+			numbers = re.findall('([0-9]+)', x)
+			start = "{0}{1}".format('v', numbers[0])
+			if traversed.count(start) == 0:
+				res = self.Iterative_DFS2(start, traversed)
+				SCCs[start] = len(res) - prev_length
+				traversed = res
+				prev_length = len(res)
+		sorted_SCCs = sorted(SCCs.iteritems(), key=operator.itemgetter(1), reverse=True)
+		print sorted_SCCs[0:5]
 		
-		
-lines = ['1 5', '2 4', '3 1', '3 2', '3 6', '4 10', '5 3', '6 1', '6 10', '7 8', '8 9', '8 11', '9 3', '9 5', '9 7', '10 2', '11 2', '11 4']
+lines = ['1 2', '2 3', '2 4', '2 5', '3 6', '4 5', '4 7', '5 2', '5 6', '5 7', '6 3', '6 8', '7 8', '7 10', '8 7', '9 7', '10 9', '10 11', '11 12', '12 10']
 #lines = ['A B', 'A C', 'C D', 'C E', 'B D', 'B E', 'E A', 'D E']
 j = Kosaraju(lines)
 #j.edges ={'A':['B','C'],'B':['D','E'],'C':['D','E'],'D':['E'],'E':['A']}

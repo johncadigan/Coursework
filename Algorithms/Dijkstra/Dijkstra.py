@@ -70,7 +70,7 @@ class Dijkstra:
 		self.vertices = list(self.vertices)
 		self.vertices.sort()
 	
-	def find_min(self, dists, vertices):
+	def find_min(self, dists, vertices):#Returns the vertex closest to the intial
 		for x in sorted(dists.iteritems(), key=operator.itemgetter(1)):
 			x, number = x
 			if x in vertices:
@@ -92,7 +92,7 @@ class Dijkstra:
 				break
 			for v in self.edges[u]:
 				alt = dist[u] + self.edge_distance[(u,v)]
-				if alt < dist[v]:
+				if alt < dist[v]: #If a faster path is found, update the results
 					dist[v] = alt
 		return dist
 	
@@ -107,13 +107,13 @@ class Dijkstra:
 			PQ.add_task(v, priority = INF)
 		dist[initial] = 0
 		while len(PQ) > 0:
-			u = PQ.pop_task()
+			u = PQ.pop_task()#The vertex closest to the initial vertex
 			u, priority = u
 			for v in self.edges[u]:
 				alt = dist[u] + self.edge_distance[(u,v)]
-				if alt < dist[v]:
+				if alt < dist[v]:#If a faster path is found, update the results
 					dist[v] = alt
-					PQ.add_task(v, priority = alt)
+					PQ.add_task(v, priority = alt) #Update the score for the vertex; The previous score will be labeled with self.REMOVED.
 		return dist
 		
 					
@@ -130,7 +130,7 @@ class Dijkstra:
 		stime = stime.microseconds/float(1000000) + stime.seconds
 		ftime = fstop-fstart
 		ftime = ftime.microseconds/float(1000000) + ftime.seconds
-		print "Array: {0:.4f} \t Priority Queue: {1:.4f} \t Increase {2:.4f}".format(stime, ftime, stime/ftime) 
+		print "Array: {0:.4f} \t Priority Queue: {1:.4f} \t Increase {2:.4f}".format(stime, ftime, stime/ftime) #Print to four decimal places
 		print "Destination \t Key \t Slow results \t Fast results\n" 
 		for destination in endpoints:
 			tupe = destination

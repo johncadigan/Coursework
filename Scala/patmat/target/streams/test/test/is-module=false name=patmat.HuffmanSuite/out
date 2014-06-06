@@ -1,0 +1,17 @@
+[0m[[0minfo[0m] [0m[32mHuffmanSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- weight of a larger tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- chars of a larger tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- string2chars("hello, world")[0m[0m
+[0m[[0minfo[0m] [0m[32m- times s1 = (c,3), (b,2), (a,1)[0m[0m
+[0m[[0minfo[0m] [0m[32m- times Nil[0m[0m
+[0m[[0minfo[0m] [0m[32m- makeOrderedLeafList for some frequency table[0m[0m
+[0m[[0minfo[0m] [0m[32m- makeOrderedLeafList of Nil[0m[0m
+[0m[[0minfo[0m] [0m[32m- combine of some leaf list[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode simple ab tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode simple abd tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode simple ab tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode simple abd tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode and encode a very short text should be identity[0m[0m
+[0m[[0minfo[0m] [0m[32m- convert to simple ab tree to table[0m[0m
+[0m[[0minfo[0m] [0m[32m- convert to simple abd tree to table[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode and quickEncode abd[0m[0m
