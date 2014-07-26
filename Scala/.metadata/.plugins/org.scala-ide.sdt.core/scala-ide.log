@@ -127,3 +127,4 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 	at scala.tools.nsc.util.InterruptReq.execute(InterruptReq.scala:26)
 	at scala.tools.nsc.interactive.Global.pollForWork(Global.scala:346)
 	at scala.tools.nsc.interactive.PresentationCompilerThread.run(PresentationCompilerThread.scala:22)
+2014-06-12 14:27:08,593  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.

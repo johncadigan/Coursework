@@ -1,0 +1,12 @@
+[0m[[0minfo[0m] [0m[32mBloxorzSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- terrain function level 1[0m[0m
+[0m[[0minfo[0m] [0m[32m- terrain function level 2[0m[0m
+[0m[[0minfo[0m] [0m[32m- findChar level 1[0m[0m
+[0m[[0minfo[0m] [0m[32m- All possible moves[0m[0m
+[0m[[0minfo[0m] [0m[32m- All possible legal moves[0m[0m
+[0m[[0minfo[0m] [0m[32m- Stream of possible moves[0m[0m
+[0m[[0minfo[0m] [0m[32m- New neighbors only[0m[0m
+[0m[[0minfo[0m] [0m[32m- optimal solution for level 1[0m[0m
+[0m[[0minfo[0m] [0m[31m- empty solutions for level 3 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.scalatest.exceptions.TestFailedException was thrown. (BloxorzSuite.scala:137)[0m[0m
+[0m[[0minfo[0m] [0m[32m- optimal solution length for level 1[0m[0m

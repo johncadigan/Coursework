@@ -117,7 +117,7 @@ object Huffman {
    * Checks whether the list `trees` contains only one single code tree.
    */
   def singleton(trees: List[CodeTree]): Boolean = {
-    trees.size==1
+    trees.size==2
   }
 
   /**
@@ -134,7 +134,7 @@ object Huffman {
    */
   def combine(trees: List[CodeTree]): List[CodeTree] = {
     if(trees.size <=2){trees}
-    else{combine(insert(makeCodeTree(trees(0), trees(1)), trees.drop(trees.size-1)))}
+    else{combine(insert(makeCodeTree(trees(0), trees(1)), trees.drop(2)))}
     
   }
  
@@ -167,6 +167,7 @@ object Huffman {
    *  - try to find sensible parameter names for `xxx`, `yyy` and `zzz`.
    */
   def until(singleton: List[CodeTree]=>Boolean , combine: List[CodeTree]=>List[CodeTree])(trees: List[CodeTree]): List[CodeTree] = {
+    //println("UNTIL STATUS: %s \n %s".format(trees.size, trees))
     if(singleton(trees)){trees}
     else{until(singleton, combine)(combine(trees))}
   }
@@ -291,19 +292,22 @@ object Huffman {
   def convert(tree: CodeTree): CodeTable = {
     
     def tableAcc(ctree: CodeTree, path: List[Bit], acc:List[(Char, List[Bit])]): List[(Char, List[Bit])] = {
-      //println("STATUS: %s \n %s".format(path, acc))
+     // println("STATUS: %s \n %s".format(path, acc))
       ctree match {
        case ctree:Leaf => {
+        //println("Leaf", ctree)
         acc:+(ctree.char, path)
         }
       
       case ctree:Fork => {
+        //println("Fork", ctree)
         mergeCodeTables(convert(ctree.left), convert(ctree.right))
       }
+    } 
     }
-      
-    }
-      tableAcc(tree, List(), List())
+      val res = tableAcc(tree, List(), List())
+      println("RESULT", res)
+      res
   }
 
   /**

@@ -11,10 +11,13 @@ import patmat.Huffman._
 class HuffmanSuite extends FunSuite {
   trait TestTrees {
     val s1 = "cccbba"
+    val s3 = "a"*28 + "b" * 14 + "c" * 6 + "d" * 4 + "e" * 2 + "f"
     val t1 = Fork(Leaf('a',2), Leaf('b',3), List('a','b'), 5)
     val t2 = Fork(Fork(Leaf('a',2), Leaf('b',3), List('a','b'), 5), Leaf('d',4), List('a','b','d'), 9)
-  }
+    println("s3 to tree \n", createCodeTree(s3.toList))
 
+  }
+  
   test("weight of a larger tree") {
     new TestTrees {
       assert(weight(t1) === 5)
@@ -49,6 +52,7 @@ class HuffmanSuite extends FunSuite {
 
   test("combine of some leaf list") {
     val leaflist = List(Leaf('e', 1), Leaf('t', 2), Leaf('x', 4))
+    println("combine of some leaf list \n %s \n =? \n %s".format(combine(leaflist), List(Fork(Leaf('e',1),Leaf('t',2),List('e', 't'),3), Leaf('x',4))))
     assert(combine(leaflist) === List(Fork(Leaf('e',1),Leaf('t',2),List('e', 't'),3), Leaf('x',4)))
   }
   test("decode simple ab tree"){
@@ -69,8 +73,6 @@ class HuffmanSuite extends FunSuite {
   }
   test("encode simple abd tree"){
     new TestTrees{
-      println("encode");
-      println(encode(t1)(List('d', 'a', 'b')))
       assert(encode(t2)(List('d', 'a', 'b'))===List(1,0,0,0,1))
     }
   }
@@ -91,7 +93,10 @@ class HuffmanSuite extends FunSuite {
   }
   test("optimal encoding"){
 		  val msg = "The Huffman encoding of this message should be three hundred and fifty-two bits long".toList
-		  val result = quickEncode(createCodeTree(msg))(msg)
+		  println("Creating code tree")
+		  val codetree = createCodeTree(msg)
+		  println("Quick encoding")
+		  val result = quickEncode(codetree)(msg)
 		  assert(result.size==352)
 }
   

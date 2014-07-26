@@ -14,4 +14,17 @@
 [0m[[0minfo[0m] [0m[32m- decode and encode a very short text should be identity[0m[0m
 [0m[[0minfo[0m] [0m[32m- convert to simple ab tree to table[0m[0m
 [0m[[0minfo[0m] [0m[32m- convert to simple abd tree to table[0m[0m
+[0m[[0minfo[0m] [0m[31m- optimal encoding *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.IndexOutOfBoundsException: 0[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.LinearSeqOptimized$class.apply(LinearSeqOptimized.scala:52)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.immutable.List.apply(List.scala:84)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.codeBits(Huffman.scala:281)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.qEncodeAcc$1(Huffman.scala:339)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.quickEncode(Huffman.scala:341)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$16.apply$mcV$sp(HuffmanSuite.scala:99)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$16.apply(HuffmanSuite.scala:94)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.HuffmanSuite$$anonfun$16.apply(HuffmanSuite.scala:94)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Suite$class.withFixture(Suite.scala:1974)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
 [0m[[0minfo[0m] [0m[32m- decode and quickEncode abd[0m[0m
