@@ -1,0 +1,265 @@
+import sys
+from collections import defaultdict
+import itertools
+import unittest
+import operator
+import heapq
+from heapq import *
+from math import sqrt
+
+
+
+INF = float('inf')
+
+class Priority_Queue:
+	
+	#Adapted from another's code
+	def __init__(self):
+		self.pq = []
+		self.entry_finder = {}
+		self.REMOVED = '<removed-task>'
+		self.counter = itertools.count()
+	
+	def __getitem__(self, x):
+		return self.entry_finder[indx]
+	
+	def __len__(self):#Items with self.Removed should not be counted
+		count = 0
+		for x in self.pq:
+			priority, head, msg = x
+			if msg != self.REMOVED:
+				count += 1
+		return count
+	
+	def add_task(self, task, priority=0):#Adds item to heap; if it exists, it is set to removed and the new item is added;
+		if task in self.entry_finder:
+			self.remove_task(task)
+		count = next(self.counter)
+		entry = [priority, count, task]
+		self.entry_finder[task] = entry
+		heappush(self.pq, entry)#First element of entry determines position in heap
+
+	def remove_task(self, task):
+		entry = self.entry_finder.pop(task)
+		entry[-1] = self.REMOVED #set the task to removed,
+	
+	def pop_task(self):#Release the lowest item in the heap
+		while self.pq:
+			priority, count, task = heappop(self.pq)
+			if task is not self.REMOVED:#Do not pop removed tasks
+				del self.entry_finder[task]#Remove it from the queue
+				return task, priority
+		raise KeyError('pop from an empty priority queue')
+
+
+
+class UnionFind(object):
+
+    def __init__(self, nodes):
+        self.sizes = {}
+        self.clusters = {}
+        for node in nodes:
+            self.clusters[node.name] = node.name
+            self.sizes[node.name] = 1
+    
+    def __str__(self):
+        return str(sorted([(self.sizes[key], key) for key in self.sizes.keys()], reverse=True)[0:5])
+
+
+    def __len__(self):
+        return len(self.sizes)    
+
+    def find(self, node):
+        return self.clusters[node]
+
+
+    def union(self, u, v):
+        u_size = self.sizes[self.clusters[u]]
+        v_size = self.sizes[self.clusters[v]]
+        if u_size  >= v_size:
+           new_leader = self.clusters[u]
+           old_leader = self.clusters[v]
+        else: 
+            new_leader = self.clusters[v]
+            old_leader = self.clusters[u] 
+        
+        new_size = u_size + v_size
+        #print "Deleting ", old_leader
+        del self.sizes[old_leader]
+        self.sizes[new_leader] = new_size
+        for key in self.clusters.keys():
+            if self.clusters[key] == old_leader:
+               self.clusters[key] = new_leader
+
+class Explicit(object):
+    
+    def __init__(self, name, edges):
+        self.name = name
+        self.distances = dict(edges)
+    
+    def __str__(self):
+        return "Node{0}".format(self.name)
+
+
+    def get_dist(self, other):
+        if self.distances.has_key(other.name):
+            return self.distances[other.name]
+        else: return INF
+
+class Implicit(object):
+    
+    def __init__(self, name, x, y):
+        self.name = name
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+       return "Node{0}:{1}".format(self.name, (self.x, self.y))
+
+    def get_dist(self, other): #Euclidean distance
+        if self.x == other.x and self.y == other.y: 
+            return 0
+        else:
+            return sqrt((self.x-other.x)**2 + (self.y - other.y)**2)
+
+
+class Clustering(object):
+
+    def __init__(self):
+        self.nodes = []
+        self.queue = Priority_Queue()
+    
+    @classmethod   
+    def implicit(cls, coordinates):
+        c = Clustering()
+        temp_nodes = []
+        for i, coor in enumerate(coordinates):
+            node = Implicit(name=int(i), x=coor[0], y=coor[1])
+            temp_nodes.append(node)
+        explicit_nodes = {}
+        for node in temp_nodes: #Get all possible combinations
+            viable_nodes = [(nodeB.name, nodeB.get_dist(node)) for nodeB in temp_nodes]
+            explicit_nodes[node.name] = viable_nodes
+        c.nodes = []
+        for key in explicit_nodes.keys():
+            node = Explicit(key, explicit_nodes[key])
+            c.nodes.append(node)
+            for edge in explicit_nodes[key]:
+                y, d = edge
+                c.queue.add_task((key, y), priority=d)
+        return c
+        
+    def cluster_count(self):
+        return len(self.clusters)
+
+    def extract_min(self):
+        return min([(nodeA.get_dist(nodeB), nodeA.name, nodeB.name) for nodeA in self.nodes for nodeB in self.nodes if self.clusters.find(nodeB.name) != self.clusters.find(nodeA.name)])
+       
+    def get_min(self):
+        same_cluster = True
+        while same_cluster == True:
+            (x, y), dist = self.queue.pop_task()
+            same_cluster = self.clusters.find(x) == self.clusters.find(y)
+        return (dist, x,y)    
+
+    def get_min_dist(self):
+        if len(self.queue) == 0: return self.min_dist
+        else: return self.get_min()[0]
+
+    def main(self, k):
+        self.clusters = UnionFind(self.nodes)
+        while len(self.clusters) > k:
+             self.min_dist, a, b = self.get_min()
+             self.clusters.union(a,b)
+    
+    def find_split(self, k):
+        self.main(k)
+        points = defaultdict(list)
+        print self.clusters
+        for leader in self.clusters.clusters.keys():
+              constituent_nodes = [self.nodes[n] for n in self.clusters.clusters.keys() if self.clusters.clusters[n]==leader]
+              print constituent_nodes
+              points[leader] = [(p.x, p.y) for p in constituent_nodes] 
+
+class TSP(object):
+      
+      def __init__(self, lines):
+           self.coordinates = []
+	   for i, line in enumerate(lines[1:]):
+	       numbers = [float(x.strip()) for x in  line.split(" ")]
+               self.coordinates.append((numbers[0], numbers[1]))
+           self.edge_distances = {}
+           for i, coor_a in enumerate(self.coordinates):
+               for j, coor_b in enumerate(self.coordinates):
+                   self.edge_distances[(i,j)] = sqrt((coor_a[0]-coor_b[0])**2 + (coor_a[1]-coor_b[1])**2)
+           vertices_no = int(lines[0].strip())
+           print "Checking... Vertices correct:{0} Edges:{1}".format(vertices_no==len(self.coordinates), len(self.edge_distances))
+
+      def main(self):
+          A = defaultdict(dict)
+          for i in range(0,len(self.coordinates)):
+              if i == 0:
+                   A[tuple([i])][0] = 0
+              else:
+                   A[tuple([i])][0] = INF
+          
+          for m in range(1, len(self.coordinates)):#To ultimately yield sets of 2 to length of vertices
+              print "Considering paths of length ", m+1
+              Ss = [tuple([0] + list(s)) for s in itertools.combinations(range(1, len(self.coordinates)),m)]#Create all possible S's with initial vertex
+              for S in Ss:
+                  S = list(S)
+                  S_m = list(S)
+                  S_m.remove(0)
+                  for j in S_m:
+                      S_j = list(S)
+                      S_j.remove(j)
+                      S_k = [k for k in S if j!=k]
+                      if m > 1: S_k.remove(0)
+                      #print "S-j: ", S_j,"J:", j,  "possible_k's ", S_k
+                      min_res = min([A[tuple(S_j)][k]+self.edge_distances[(k,j)] for k in S_k])
+                      A[tuple(S)][j] = min_res
+              cur_a = len(A)
+              for key in A.keys():
+                  if len(key) <= m: del A[key]
+              new_a = len(A)
+              print cur_a, "->", new_a, "=", new_a-cur_a
+          res = min([A[tuple(range(0, len(self.coordinates)))][j] + self.edge_distances[(j,0)] for j in range(1, len(self.coordinates))])
+          return float(str(round(res, 1)))         
+                        
+              
+  
+          
+           
+           
+class TestTests(unittest.TestCase):
+    
+    def setUp(self):
+        pass   
+    
+    def test_one(self):
+        lines = "4\n0 0\n1 0\n1 1\n0 1".split("\n")
+        t = TSP(lines)
+        self.assertTrue(t.main()==4)
+
+    def test_two(self):
+        lines = "16\n20833.3333 17100.0000\n21600.0000 16500.0000\n22183.3333 13133.3333\n22583.3333 14300.0000\n23883.3333 14533.3333\n24166.6667 13250.0000\n25149.1667 12365.8333\n26133.3333 14500.0000\n26683.3333 8766.6667\n26283.3333 12766.6667\n26433.3333 13433.3333\n26733.3333 11683.3333\n27096.1111 13415.8333\n27166.6667 9833.33331\n27233.3333 10450.0000\n28166.6667 12833.33331".split("\n")
+        t = TSP(lines)
+        print t.main()
+        self.assertTrue(t.main()==26714.9)
+
+
+#"""
+if __name__ == '__main__':
+	try:
+		lines = file(sys.argv[1],"r")
+	except IOError:
+		sys.stderr.write("ERROR: Cannot read inputfile %s.\n" % arg)
+		sys.exit(1)
+	T = TSP(lines.readlines())
+        print T.main()
+        
+
+"""
+if __name__ == '__main__':
+   unittest.main()
+"""
