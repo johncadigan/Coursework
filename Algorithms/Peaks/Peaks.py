@@ -32,8 +32,8 @@ class NoisyPeak(Peak):
          #ax2.plot(range(0, len(self.v)), self.y, 'r--') 
      
      def standard_devs(self):#Calculates each point's standard deviation up to that point
-         sd = [0.0]         
-         sd += [self.y[x]/np.std(self.y[0:x]) for x in range(1, len(self.y))]
+                   
+         sd = [self.y[x]/np.std(self.y[0:x]) if np.std(self.y[0:x]) else 0.0 for x in range(1, len(self.y))]
          self.sd = sd
          #ax3 = self.fig.add_subplot(1,1,1)
          #ax3.plot(range(0, len(self.v)), sd, color='g', label='noise')
