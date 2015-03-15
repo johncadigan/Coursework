@@ -40,7 +40,8 @@ class NoisyPeak(Peak):
              ax2.plot(range(0, len(self.v)), self.y, 'r--') 
      
      def standard_devs(self):#Calculates each point's standard deviation up to that point          
-         sd = [self.y[x]/np.std(self.y[0:x]) if np.std(self.y[0:x]) > 0.0 else 0.0 for x in range(0, len(self.y))]
+         sd = [0.0]
+         sd += [self.y[x]/np.std(self.y[0:x]) if np.std(self.y[0:x]) > 0.0 else 0.0 for x in range(1, len(self.y))]
          self.sd = sd
          if self.verbose:
              ax3 = self.fig.add_subplot(1,1,1)
@@ -85,9 +86,23 @@ class WNoisyPeak(NoisyPeak):
              ax3 = self.fig.add_subplot(1,1,1)
              ax3.plot(range(0, len(self.v)), sd, color='g', label='noise')
  
+     @classmethod
+     def from_file(cls, w, l): 
+        l = [float(l) for l in f.readlines()]
+        return cls(w, l)
 
 
+class MWNoisyPeak(WNoisyPeak):
 
+     def standard_devs(self):
+         w = self.w
+         sd = [self.y[x]/np.std(self.y[0:w*2]) for x in range(0,w)] # initial
+         sd += [self.y[x]/np.std(self.y[x-w:x+w]) if np.std(self.y[0:x]) > 0.0 else 0.0 for x in range(w, len(self.y)-w*2)]
+         sd += [self.y[x]/np.std(self.y[len(self.y)-w*2:len(self.y)]) for x in range(len(self.y)-2*w, len(self.y))]
+         self.sd = sd
+
+
+"""
 class TestTests(unittest.TestCase):  
      
      def setUp(self):
@@ -102,11 +117,11 @@ class TestTests(unittest.TestCase):
         t = WNoisyPeak(36, self.values)
         t.solve()
         self.assertTrue(t.solve()==[17,140,304,484])
-
 """
+
 if __name__ == "__main__":
      f = file(sys.argv[1], "r")
-     p = NoisyPeak.from_file(f)
+     p = WNoisyPeak.from_file(36, f)
      if len(sys.argv) == 3:
          print p.solve_for(int(sys.argv[2]))
      else:
@@ -116,4 +131,4 @@ if __name__ == "__main__":
 """
 if __name__ == "__main__":
     unittest.main()
-
+"""
