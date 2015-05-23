@@ -1,69 +1,68 @@
 from nltk.corpus import treebank
 import re
 
-def reduce_to_rules(tree_string):
-    tree_string = "".join(tree_string.split("\n"))
-    all_rules = "".join(re.findall("(\([A-Z]{1,4}|\(\.|\(\,|\(|\))", tree_string))
-    assert(all_rules.count("(") == all_rules.count(")")) 
-    return all_rules
+symbols = "\.\,\'\"\*\$\-\?\%\&"
+rule = "[A-Z0-9{0}]".format(symbols) + "{1,10}"
+word = "[\w*{0}]".format(symbols) + "{1,20}"
 
-def reduce_to_urules(tree_string):
-    tree_string = "".join(tree_string.split("\n"))
-    all_unary = re.findall("(\([A-Z]{1,4} \w*\.?\))", tree_string)
+def balanced_parens(sent):
+    rgt = sent.count("(")
+    lft = sent.count(")")
+    if lft==rgt and lft > 0:
+        return True
+    else:
+        return False
+
+def find_nonunary(sent):
+    parent = re.findall("(\({0})".format(rule), sent)[0][1:]
+    fblank = sent.find(parent)+len(parent)#find first blank
     rules = []
-    for x in all_unary:
-        p, c = x.split(" ")
-        p = p[1:]
-        c = c[:len(c)-1]
-        rules.append("{0} -> '{1}'".format(p, c))
+    children = []
+    start_rule = int(fblank)
+    end_rule = int(fblank)
+    while end_rule < len(sent):
+        end_rule+=1
+        section = sent[start_rule:end_rule]
+        if balanced_parens(sent[start_rule:end_rule]):
+            next_children = re.findall("(\({0})".format(rule), section)
+            if len(next_children) > 0:
+                child = next_children[0][1:]
+                children.append(child)
+                if len(next_children) > 1:
+                    rules+=(find_nonunary(section))
+                start_rule=int(end_rule)
+    rules.append("{0} -> {1}".format(parent, " ".join(children)))
+    return rules
+    
+
+def find_unary(sent):
+    rules = []
+    results = re.findall("(\({0}\ {1}\))".format(rule,word), sent)
+    for res in results:
+        x = res.split(" ")
+        if len(x) == 2:
+            p,c = x
+            rules.append("{0} -> '{1}'".format(p[1:], c[:-1]))
     return rules
 
-
-def balanced_paren(p_string):
-    rgt = p_string.count("(")
-    lft = p_string.count(")")
-    return lft > 0 and rgt == lft
-
-def extract_rule(rule_string):
-    if rule_string.find("(",1) >= 0:
-        second_paren = rule_string.index("(",1)
-        rules = True
-    else:
-        second_paren = rule_string.index(")")
-        rules = False
-    parent = rule_string[1:second_paren]
-    return (parent, second_paren, rule_string, rules)
-
-def non_unary_rules(rule_string):
-    parent, nextr, rs, rules =  extract_rule(rule_string)
-    rule_exp = []
-    children = []
-    i = nextr
-    while i < len(rule_string):
-         i+=1
-         if balanced_paren(rule_string[nextr:i]) and len(rule_string[nextr:i]) >1:
-            child, n, rs, rules = extract_rule(rule_string[nextr:i])
-            if rules: rule_exp += non_unary_rules(rs)
-            nextr = i
-            children.append(child)
-    rule_exp += ["{0} -> {1}".format(parent, " ".join(children))]
-    return rule_exp
-            
-            
 def check(productions, rules):
     i = 0
     for x in productions:
-        simple = re.sub("(\-[A-Z]{1,4})", "", str(x))
-        if simple in rules: i += 1
-        else: print simple
-    print "{0}/{1}".format(i, len(productions))
-        
-
+        if str(x) in rules: i += 1
+        else: print x
+    return (i,len(productions))
 
 if __name__=="__main__":
-   sent = str(treebank.parsed_sents()[1])
-   r = reduce_to_urules(sent)
-   rules = reduce_to_rules(sent)
-   r+= non_unary_rules(rules)
+   total, recall = 0,0
+   for s in treebank.parsed_sents():
+        sent = "".join(str(s).split("\n"))
+        unaries = find_unary(sent)
+        nonunaries = find_nonunary(sent)
+        rules = unaries + nonunaries
+        r, t = check(s.productions(), rules)
+        recall+=r
+        total+=t
+   print "{0} out of {1}: {2}".format(recall,total, float(recall)/total)
    
-   check(treebank.parsed_sents()[1].productions(), r)
+
+
