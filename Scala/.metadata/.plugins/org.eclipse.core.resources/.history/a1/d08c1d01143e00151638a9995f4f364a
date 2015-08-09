@@ -1,0 +1,121 @@
+package calculator
+
+import org.scalatest.FunSuite
+
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
+
+import org.scalatest._
+
+import TweetLength.MaxTweetLength
+
+@RunWith(classOf[JUnitRunner])
+class CalculatorSuite extends FunSuite with ShouldMatchers {
+
+  /******************
+   ** TWEET LENGTH **
+   ******************/
+
+  def tweetLength(text: String): Int =
+    text.codePointCount(0, text.length)
+
+  test("tweetRemainingCharsCount with a constant signal") {
+    val result = TweetLength.tweetRemainingCharsCount(Var("hello world"))
+    assert(result() == MaxTweetLength - tweetLength("hello world"))
+
+    val tooLong = "foo" * 200
+    val result2 = TweetLength.tweetRemainingCharsCount(Var(tooLong))
+    assert(result2() == MaxTweetLength - tweetLength(tooLong))
+  }
+
+  test("tweetRemainingCharsCount with a supplementary char") {
+    val result = TweetLength.tweetRemainingCharsCount(Var("foo blabla \uD83D\uDCA9 bar"))
+    assert(result() == MaxTweetLength - tweetLength("foo blabla \uD83D\uDCA9 bar"))
+  }
+
+
+  test("colorForRemainingCharsCount with a constant signal green") {
+    val resultGreen1 = TweetLength.colorForRemainingCharsCount(Var(52))
+    assert(resultGreen1() == "green")
+    val resultGreen2 = TweetLength.colorForRemainingCharsCount(Var(15))
+    assert(resultGreen2() == "green")
+  }
+  test("Orange"){
+    
+    val resultOrange3 = TweetLength.colorForRemainingCharsCount(Var(14))
+    assert(resultOrange3() == "orange")
+    val resultOrange1 = TweetLength.colorForRemainingCharsCount(Var(12))
+    assert(resultOrange1() == "orange")
+    val resultOrange2 = TweetLength.colorForRemainingCharsCount(Var(0))
+    assert(resultOrange2() == "orange")
+  }
+  test("Red"){
+    val resultRed1 = TweetLength.colorForRemainingCharsCount(Var(-1))
+    assert(resultRed1() == "red")
+    val resultRed2 = TweetLength.colorForRemainingCharsCount(Var(-5))
+    assert(resultRed2() == "red")
+  }
+  
+  test("X^2 - 1") {
+    val a = Signal(1.0)
+    val b = Signal(0.0)
+    val c = Signal(-1.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(1,-1))
+  }
+  
+  test("X^2 ") {
+    val a = Signal(1.0)
+    val b = Signal(0.0)
+    val c = Signal(0.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(0))
+  }
+  test("X^2 -2x") {
+    val a = Signal(1.0)
+    val b = Signal(-2.0)
+    val c = Signal(0.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(0, 2))
+  }
+  
+  test("X^2 + 3x -10"){
+    val a = Signal(1.0)
+    val b = Signal(3.0)
+    val c = Signal(-10.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(-5,2))
+    
+  }
+  test("2x"){
+    val a = Signal(0.0)
+    val b = Signal(2.0)
+    val c = Signal(0.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(0))
+    
+  }
+  test("Inverse: -X^2 - 3x +10"){
+    val a = Signal(-1.0)
+    val b = Signal(-3.0)
+    val c = Signal(10.0)
+    val invresult = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(invresult()==Set(-5,2))
+  }
+  
+  test("Multiple: -5X^2 - 10"){
+    val a = Signal(5.0)
+    val b = Signal(0.0)
+    val c = Signal(-5.0)
+    val invresult = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(invresult()==Set(-1,1))
+  }
+  
+  test("Calculator Simple"){
+    val va = new Literal(3)
+    val va = new Literal(2)
+    val m = Map[String, Signal[Expr]] = (("c", vc), ("a", va), ("b", vb))
+  }
+
+}
+

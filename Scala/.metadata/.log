@@ -475,3 +475,72 @@ Binding(CTRL+F4,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2015-08-02 12:04:41.177 -----------------------------------------------
+eclipse.buildId=4.1.1-vfinal-20150727-1320-Typesafe
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/john/github/Coursework/Coursework/Scala -os linux -ws gtk -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:04:58.675
+!MESSAGE Preference scala.compiler.sourceLevel was uninitialized for streams, setting default to 2.11.
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:04:58.680
+!MESSAGE Preference scala.compiler.installation was uninitialized for streams, setting default to 2.11.
+!SESSION 2015-08-02 12:19:38.358 -----------------------------------------------
+eclipse.buildId=4.1.1-vfinal-20150727-1320-Typesafe
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:19:59.891
+!MESSAGE Preference scala.compiler.sourceLevel was uninitialized for example, setting default to 2.11.
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:19:59.897
+!MESSAGE Preference scala.compiler.installation was uninitialized for example, setting default to 2.11.
+!SESSION 2015-08-02 12:21:05.370 -----------------------------------------------
+eclipse.buildId=4.1.1-vfinal-20150727-1320-Typesafe
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:21:22.396
+!MESSAGE Preference scala.compiler.sourceLevel was uninitialized for example, setting default to 2.11.
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:21:22.401
+!MESSAGE Preference scala.compiler.installation was uninitialized for example, setting default to 2.11.
+!SESSION 2015-08-02 12:33:53.906 -----------------------------------------------
+eclipse.buildId=4.1.1-vfinal-20150727-1320-Typesafe
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:34:06.475
+!MESSAGE Preference scala.compiler.sourceLevel was uninitialized for quickcheck, setting default to 2.11.
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-02 12:34:06.482
+!MESSAGE Preference scala.compiler.installation was uninitialized for quickcheck, setting default to 2.11.
+
+!ENTRY org.scala-ide.sdt.core 1 0 2015-08-02 13:21:31.449
+!MESSAGE Timeout while resolving hyperlink in /home/john/github/Coursework/Coursework/Scala/quickcheck/src/main/scala/quickcheck/QuickCheck.scala at: offset: 598, length: 0
+!SESSION 2015-08-05 19:08:03.868 -----------------------------------------------
+eclipse.buildId=4.1.1-vfinal-20150727-1320-Typesafe
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-05 19:08:17.745
+!MESSAGE Preference scala.compiler.sourceLevel was uninitialized for quickcheck, setting default to 2.11.
+
+!ENTRY org.scala-ide.sdt.core 2 0 2015-08-05 19:08:17.749
+!MESSAGE Preference scala.compiler.installation was uninitialized for quickcheck, setting default to 2.11.
+
+!ENTRY org.scala-ide.sdt.core 1 0 2015-08-05 21:24:49.184
+!MESSAGE Timeout while resolving hyperlink in /home/john/github/Coursework/Coursework/Scala/calculator/src/test/scala/calculator/CalculatorSuite.scala at: offset: 2519, length: 0
+
+!ENTRY org.scala-ide.sdt.core 1 0 2015-08-08 14:41:02.804
+!MESSAGE Timeout while resolving hyperlink in /home/john/github/Coursework/Coursework/Scala/calculator/src/test/scala/calculator/CalculatorSuite.scala at: offset: 3711, length: 0

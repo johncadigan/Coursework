@@ -1,0 +1,175 @@
+package calculator
+
+import org.scalatest.FunSuite
+
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
+
+import org.scalatest._
+
+import TweetLength.MaxTweetLength
+
+@RunWith(classOf[JUnitRunner])
+class CalculatorSuite extends FunSuite with ShouldMatchers {
+
+  /******************
+   ** TWEET LENGTH **
+   ******************/
+
+  def tweetLength(text: String): Int =
+    text.codePointCount(0, text.length)
+
+  test("tweetRemainingCharsCount with a constant signal") {
+    val result = TweetLength.tweetRemainingCharsCount(Var("hello world"))
+    assert(result() == MaxTweetLength - tweetLength("hello world"))
+
+    val tooLong = "foo" * 200
+    val result2 = TweetLength.tweetRemainingCharsCount(Var(tooLong))
+    assert(result2() == MaxTweetLength - tweetLength(tooLong))
+  }
+
+  test("tweetRemainingCharsCount with a supplementary char") {
+    val result = TweetLength.tweetRemainingCharsCount(Var("foo blabla \uD83D\uDCA9 bar"))
+    assert(result() == MaxTweetLength - tweetLength("foo blabla \uD83D\uDCA9 bar"))
+  }
+
+
+  test("colorForRemainingCharsCount with a constant signal green") {
+    val resultGreen1 = TweetLength.colorForRemainingCharsCount(Var(52))
+    assert(resultGreen1() == "green")
+    val resultGreen2 = TweetLength.colorForRemainingCharsCount(Var(15))
+    assert(resultGreen2() == "green")
+  }
+  test("Orange"){
+    
+    val resultOrange3 = TweetLength.colorForRemainingCharsCount(Var(14))
+    assert(resultOrange3() == "orange")
+    val resultOrange1 = TweetLength.colorForRemainingCharsCount(Var(12))
+    assert(resultOrange1() == "orange")
+    val resultOrange2 = TweetLength.colorForRemainingCharsCount(Var(0))
+    assert(resultOrange2() == "orange")
+  }
+  test("Red"){
+    val resultRed1 = TweetLength.colorForRemainingCharsCount(Var(-1))
+    assert(resultRed1() == "red")
+    val resultRed2 = TweetLength.colorForRemainingCharsCount(Var(-5))
+    assert(resultRed2() == "red")
+  }
+  
+  test("X^2 - 1") {
+    val a = Signal(1.0)
+    val b = Signal(0.0)
+    val c = Signal(-1.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(1,-1))
+  }
+  
+  test("X^2 ") {
+    val a = Signal(1.0)
+    val b = Signal(0.0)
+    val c = Signal(0.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(0))
+  }
+  test("X^2 -2x") {
+    val a = Signal(1.0)
+    val b = Signal(-2.0)
+    val c = Signal(0.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(0, 2))
+  }
+  
+  test("X^2 + 3x -10"){
+    val a = Signal(1.0)
+    val b = Signal(3.0)
+    val c = Signal(-10.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(-5,2))
+    
+  }
+  test("2x"){
+    val a = Signal(0.0)
+    val b = Signal(2.0)
+    val c = Signal(0.0)
+    val result = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(result()==Set(0))
+    
+  }
+  test("Inverse: -X^2 - 3x +10"){
+    val a = Signal(-1.0)
+    val b = Signal(-3.0)
+    val c = Signal(10.0)
+    val invresult = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(invresult()==Set(-5,2))
+  }
+  
+  test("Multiple: -5X^2 - 10"){
+    val a = Signal(5.0)
+    val b = Signal(0.0)
+    val c = Signal(-5.0)
+    val invresult = Polynomial.computeSolutions(a,b,c, Polynomial.computeDelta(a,b,c))
+    assert(invresult()==Set(-1,1))
+  }
+  
+  test("Calculator Simple"){
+    val va = Signal[Expr]{new Literal(3)}
+    val a = new Ref("a")
+    val vb = Signal[Expr]{new Literal(2)}
+    val b = new Ref("b")
+    val vc = Signal[Expr]{new Times(a, b)}
+    val m = Map[String, Signal[Expr]](("c", vc), ("a", va), ("b", vb))
+    val s = Calculator.computeValues(m)
+    assert(s("c")()==6.0)
+  }
+    test("Calculator Intermediate values"){
+    val va = Signal[Expr]{new Literal(3)}
+    val a = new Ref("a")
+    val vb = Signal[Expr]{new Literal(2)}
+    val b = new Ref("b")
+    val vc = Signal[Expr]{new Times(a, b)}
+    val c = new Ref("c")
+    val vd = Signal[Expr]{new Literal(3)}
+    val d = new Ref("d")
+    val ve = Signal[Expr]{new Literal(2)}
+    val e = new Ref("e")
+    val vf = Signal[Expr]{new Times(e, d)}
+    val f = new Ref("f")
+    val vg = Signal[Expr]{new Minus(c, f)}
+    val g = new Ref("g")
+    
+    val m = Map[String, Signal[Expr]](("c", vc), ("d", vd), ("b", vb), ("a", va), ("e", ve), ("f", vf), ("g",vg))
+    val s = Calculator.computeValues(m)
+    assert(s("g")()==0.0)
+  }
+  
+  
+  test("Calculator Undefined ref"){
+    val d = new Ref("d")
+    val va = Signal[Expr]{new Literal(3)}
+    val a = new Ref("a")
+    val vb = Signal[Expr]{new Literal(2)}
+    val b = new Ref("b")
+    val vc = Signal[Expr]{new Times(a, b)}
+    val m = Map[String, Signal[Expr]](("c", vc), ("a", va), ("b", vb))
+    val s = Calculator.computeValues(m)
+    assert(s("d")() equals Double.NaN)
+  }
+  
+  test("Cyclical ref"){
+    var namedExpressions: Map[String, Signal[Expr]] = Map() + ("a" -> Signal(Ref("b")))
+    namedExpressions = namedExpressions + ("b" -> Signal(Ref("a")))
+    //detects cyclic variables with the eval method
+    //assert(java.lang.Double.isNaN(Calculator.eval(Ref("a"), namedExpressions)))
+    //assert(java.lang.Double.isNaN(Calculator.eval(Ref("b"), namedExpressions)))
+
+    // detects cyclic variables with the computeValues method
+    //var exprSignals = Calculator.computeValues(namedExpressions)
+    //val signalA = exprSignals.getOrElse("a", Var(0.0))
+    //assert(java.lang.Double.isNaN(signalA()))
+    //val signalB = exprSignals.getOrElse("b", Var(0.0))
+    //assert(java.lang.Double.isNaN(signalB()))
+  }
+  
+
+}
+

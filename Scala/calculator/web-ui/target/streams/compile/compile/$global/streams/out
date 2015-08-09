@@ -1,0 +1,41 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala, /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/TweetLength.scala, /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Polynomial.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala, /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/TweetLength.scala, /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Polynomial.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala, /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/TweetLength.scala, /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Polynomial.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 5 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 5 Scala sources to /home/john/github/Coursework/Coursework/Scala/calculator/web-ui/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.6[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.6[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 6ebcf5dd, interfacing (CompilerInterface) with Scala compiler version 2.11.6[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-Xplugin:/home/john/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.6/jars/scalajs-compiler_2.11.6-0.6.2.jar[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/john/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/john/github/Coursework/Coursework/Scala/calculator/web-ui/target/scala-2.11/classes:/home/john/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.2.jar:/home/john/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.8.0.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 4.986655939 s[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/john/github/Coursework/Coursework/Scala/calculator/src/main/scala/calculator/Calculator.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	accumulateRefs.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mNone of the modified names appears in /home/john/github/Coursework/Coursework/Scala/calculator/web-ui/src/main/scala/calculator/CalculatorUI.scala. This dependency is not being considered for invalidation.[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

@@ -1,0 +1,8 @@
+build
+eclipse
+eclipse with-source=true
+sbt test
+test
+submit johnpaulcadigan@gmail.com 1laveiklu;
+submit johnpaulcadigan@gmail.com yursuiga
+submit johnpaulcadigan@gmail.com bxqQvAnzFU

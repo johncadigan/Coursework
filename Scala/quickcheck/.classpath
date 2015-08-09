@@ -1,0 +1,51 @@
+<classpath>
+  <classpathentry kind="src" path="src/main/scala"/>
+  <classpathentry kind="src" path="src/main/resources"/>
+  <classpathentry kind="src" path="src/test/scala"/>
+  <classpathentry kind="src" path="src/test/resources"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scalacheck/scalacheck_2.11/srcs/scalacheck_2.11-1.12.1-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.scalacheck/scalacheck_2.11/1.12.1/jars/scalacheck_2.11.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.2-sources.jar" kind="lib" path="/root/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.2.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar" kind="lib" path="/root/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.netflix.rxjava/rxjava-scala/srcs/rxjava-scala-0.15.0-sources.jar" kind="lib" path="/root/.ivy2/cache/com.netflix.rxjava/rxjava-scala/jars/rxjava-scala-0.15.0.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.netflix.rxjava/rxjava-core/srcs/rxjava-core-0.15.0-sources.jar" kind="lib" path="/root/.ivy2/cache/com.netflix.rxjava/rxjava-core/jars/rxjava-core-0.15.0.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.json4s/json4s-native_2.11/srcs/json4s-native_2.11-3.2.11-sources.jar" kind="lib" path="/root/.ivy2/cache/org.json4s/json4s-native_2.11/jars/json4s-native_2.11-3.2.11.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.2.11-sources.jar" kind="lib" path="/root/.ivy2/cache/org.json4s/json4s-core_2.11/jars/json4s-core_2.11-3.2.11.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.2.11-sources.jar" kind="lib" path="/root/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.2.11.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.6-sources.jar" kind="lib" path="/root/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scala-lang/scalap/srcs/scalap-2.11.0-sources.jar" kind="lib" path="/root/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.0.jar"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scala-lang.modules/scala-swing_2.11/srcs/scala-swing_2.11-1.0.1-sources.jar" kind="lib" path="/root/.ivy2/cache/org.scala-lang.modules/scala-swing_2.11/bundles/scala-swing_2.11-1.0.1.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/net.databinder.dispatch/dispatch-core_2.11/srcs/dispatch-core_2.11-0.11.0-sources.jar" kind="lib" path="/root/.ivy2/cache/net.databinder.dispatch/dispatch-core_2.11/jars/dispatch-core_2.11-0.11.0.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.ning/async-http-client/srcs/async-http-client-1.7.16-sources.jar" kind="lib" path="/root/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.16.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/io.netty/netty/srcs/netty-3.6.3.Final-sources.jar" kind="lib" path="/root/.ivy2/cache/io.netty/netty/bundles/netty-3.6.3.Final.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.5-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.slf4j/slf4j-simple/srcs/slf4j-simple-1.7.5-sources.jar" kind="lib" path="/root/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.5.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.squareup.retrofit/retrofit/srcs/retrofit-1.0.0-sources.jar" kind="lib" path="/root/.ivy2/cache/com.squareup.retrofit/retrofit/jars/retrofit-1.0.0.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.2.3-sources.jar" kind="lib" path="/root/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.2.3.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scala-lang.modules/scala-async_2.11/srcs/scala-async_2.11-0.9.2-sources.jar" kind="lib" path="/root/.ivy2/cache/org.scala-lang.modules/scala-async_2.11/bundles/scala-async_2.11-0.9.2.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.9-sources.jar" kind="lib" path="/root/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.9.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.typesafe/config/srcs/config-1.2.1-sources.jar" kind="lib" path="/root/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/srcs/akka-testkit_2.11-2.3.9-sources.jar" kind="lib" path="/root/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/jars/akka-testkit_2.11-2.3.9.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/srcs/akka-persistence-experimental_2.11-2.3.9-sources.jar" kind="lib" path="/root/.ivy2/cache/com.typesafe.akka/akka-persistence-experimental_2.11/jars/akka-persistence-experimental_2.11-2.3.9.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.iq80.leveldb/leveldb/srcs/leveldb-0.5-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.iq80.leveldb/leveldb/0.5/jars/leveldb.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.iq80.leveldb/leveldb-api/srcs/leveldb-api-0.5-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.iq80.leveldb/leveldb-api/0.5/jars/leveldb-api.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.google.guava/guava/srcs/guava-12.0-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/com.google.guava/guava/12.0/jars/guava.jar"/>
+  <classpathentry kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/com.google.code.findbugs/jsr305/1.3.9/jars/jsr305.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/srcs/leveldbjni-all-1.7-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.leveldbjni/leveldbjni-all/1.7/bundles/leveldbjni-all.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni/srcs/leveldbjni-1.7-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.leveldbjni/leveldbjni/1.7/jars/leveldbjni.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.fusesource.hawtjni/hawtjni-runtime/srcs/hawtjni-runtime-1.8-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.hawtjni/hawtjni-runtime/1.8/jars/hawtjni-runtime.jar"/>
+  <classpathentry kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.leveldbjni/leveldbjni-osx/1.5/jars/leveldbjni-osx.jar"/>
+  <classpathentry kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.leveldbjni/leveldbjni-linux32/1.5/jars/leveldbjni-linux32.jar"/>
+  <classpathentry kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.leveldbjni/leveldbjni-linux64/1.5/jars/leveldbjni-linux64.jar"/>
+  <classpathentry kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.leveldbjni/leveldbjni-win32/1.5/jars/leveldbjni-win32.jar"/>
+  <classpathentry kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.fusesource.leveldbjni/leveldbjni-win64/1.5/jars/leveldbjni-win64.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/com.google.protobuf/protobuf-java/srcs/protobuf-java-2.5.0-sources.jar" kind="lib" path="/root/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/ch.epfl.lamp/scala-grading-runtime_2.11/srcs/scala-grading-runtime_2.11-0.1-sources.jar" kind="lib" path="/root/.ivy2/cache/ch.epfl.lamp/scala-grading-runtime_2.11/jars/scala-grading-runtime_2.11-0.1.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-2.2.4-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.scalatest/scalatest_2.11/2.2.4/bundles/scalatest_2.11.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.2-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/junit/junit/srcs/junit-4.10-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/junit/junit/4.10/jars/junit.jar"/>
+  <classpathentry sourcepath="/root/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.1-sources.jar" kind="lib" path="/home/john/Downloads/activator-dist-1.3.5/repository/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="output" path="bin"/>
+</classpath>

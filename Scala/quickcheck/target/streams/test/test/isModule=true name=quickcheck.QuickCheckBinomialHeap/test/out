@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m+ Heap.min1: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.minOf2: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.minOfNone: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.minOfList: OK, proved property.[0m
+[0m[[0minfo[0m] [0m+ Heap.gen1: OK, passed 100 tests.[0m
+[0m[[0minfo[0m] [0m+ Heap.gen2: OK, passed 100 tests.[0m

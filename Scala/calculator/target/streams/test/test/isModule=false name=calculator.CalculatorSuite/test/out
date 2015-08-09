@@ -1,0 +1,17 @@
+[0m[[0minfo[0m] [0m[32mCalculatorSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- tweetRemainingCharsCount with a constant signal[0m[0m
+[0m[[0minfo[0m] [0m[32m- tweetRemainingCharsCount with a supplementary char[0m[0m
+[0m[[0minfo[0m] [0m[32m- colorForRemainingCharsCount with a constant signal green[0m[0m
+[0m[[0minfo[0m] [0m[32m- Orange[0m[0m
+[0m[[0minfo[0m] [0m[32m- Red[0m[0m
+[0m[[0minfo[0m] [0m[32m- X^2 - 1[0m[0m
+[0m[[0minfo[0m] [0m[32m- X^2 [0m[0m
+[0m[[0minfo[0m] [0m[32m- X^2 -2x[0m[0m
+[0m[[0minfo[0m] [0m[32m- X^2 + 3x -10[0m[0m
+[0m[[0minfo[0m] [0m[32m- 2x[0m[0m
+[0m[[0minfo[0m] [0m[32m- Inverse: -X^2 - 3x +10[0m[0m
+[0m[[0minfo[0m] [0m[32m- Multiple: -5X^2 - 10[0m[0m
+[0m[[0minfo[0m] [0m[32m- Calculator Simple[0m[0m
+[0m[[0minfo[0m] [0m[32m- Calculator Intermediate values[0m[0m
+[0m[[0minfo[0m] [0m[32m- Calculator Undefined ref[0m[0m
+[0m[[0minfo[0m] [0m[32m- Cyclical ref[0m[0m

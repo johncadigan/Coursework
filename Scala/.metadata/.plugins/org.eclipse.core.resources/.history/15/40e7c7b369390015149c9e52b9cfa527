@@ -1,0 +1,74 @@
+package quickcheck
+
+import common._
+
+import org.scalacheck._
+import Arbitrary._
+import Gen._
+import Prop._
+import scala.math.min
+
+abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
+
+  property("min1") = forAll { a: Int =>
+    val h = insert(a, empty)
+    findMin(h) == a
+  }
+  
+  property("minOf2") = forAll { a: Int =>
+    if(a < 2147483647){
+    val h = insert(a, empty)
+    val h2 = insert(a+1, h)
+    findMin(h2) == a
+    }
+    else true
+    
+  }
+  
+  property("minOfNone") = forAll { a: Int =>
+    
+    val h = insert(a, empty)
+    val eh = deleteMin(h)
+    isEmpty(eh)
+    
+  }
+  
+  property("minOfList") = {
+    val a = List()
+    if(a.isEmpty) true
+    val h = HeapAcc(a, empty)
+    HeapList(h, a.sorted)
+  }
+   
+ 
+  
+  property("gen1") = forAll { (h: H) =>
+  val m = if (isEmpty(h)) 0 else findMin(h)
+  findMin(insert(m, h))==m
+  }
+  property("gen2") = forAll { (h: H, h2: H)=>
+    val m1 = if(isEmpty(h)) 0 else findMin(h)  
+    val m2 = if(isEmpty(h2)) 0 else findMin(h2)
+    val mm = meld(h,h2)
+    findMin(mm) == min(m1,m2)
+  }
+  
+  
+   def HeapAcc(xs: List[Int], acc: H): H = {
+      if(xs.size == 1) insert(xs(0),acc)
+      else insert(xs.head, HeapAcc(xs.tail,acc))
+    }
+   def HeapList(h: H, l: List[Int]): Boolean = {
+     if(l.size==1) findMin(h) == l(0)
+     else if(findMin(h) != l(0)) false 
+     else HeapList(deleteMin(h), l.tail)
+   }
+  
+  lazy val genHeap: Gen[H] = for {
+    a <- arbitrary[Int]
+    m <- oneOf(const(empty), genHeap)
+  } yield insert(a, m)
+
+  implicit lazy val arbHeap: Arbitrary[H] = Arbitrary(genHeap)
+
+}
