@@ -2,4 +2,8 @@ Algorithms contains projects for a class on Coursera
 
 CPP contains projects for an introduction to object-oriented programming with C++
 
+HPP contains some of the code from a course on Heterogeneous Parallel Programming with CUDA
+
 NLP contains projects for a course on Natural Language Processing
+
+Scala contains projects from a course on functional programming and a course on reactive programming
